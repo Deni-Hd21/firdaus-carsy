@@ -1,6 +1,8 @@
 import { prisma } from "@/lib/prisma";
 import TestimoniCard from "./TestimoniCard";
 
+export const revalidate = 0;
+
 export default async function Testimoni() {
   const testimoni = await prisma.testimoni.findMany({
     orderBy: { createdAt: "desc" },

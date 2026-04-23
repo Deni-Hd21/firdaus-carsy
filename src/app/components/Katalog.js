@@ -2,6 +2,8 @@ import { prisma } from "@/lib/prisma";
 import { motion } from "framer-motion";
 import KatalogCard from "./KatalogCard";
 
+export const revalidate = 0;
+
 export default async function Katalog() {
 const mobil = await prisma.mobil.findMany({
   where: { tersedia: true },

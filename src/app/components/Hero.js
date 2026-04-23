@@ -1,6 +1,8 @@
 import { prisma } from "@/lib/prisma";
 import HeroSlider from "./HeroSlider";
 
+export const revalidate = 0;
+
 export default async function Hero() {
   const fotos = await prisma.fotoHero.findMany({
     where: { aktif: true },
