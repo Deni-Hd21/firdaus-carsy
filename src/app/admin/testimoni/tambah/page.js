@@ -1,0 +1,171 @@
+"use client";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { compressImage } from "@/lib/compressImage";
+
+export default function TambahTestimoni() {
+  const router = useRouter();
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const [foto, setFoto] = useState(null);
+
+  const [form, setForm] = useState({
+    nama: "",
+    kota: "",
+    mobil: "",
+    pesan: "",
+    bintang: 5,
+  });
+
+  function handleChange(e) {
+    const { name, value } = e.target;
+    setForm((prev) => ({ ...prev, [name]: value }));
+  }
+
+  async function handleUploadFoto(testimoniId) {
+    try {
+      if (!foto) return;
+
+      const fd = new FormData();
+      const compressed = await compressImage(foto);
+      fd.append("file", compressed);
+      fd.append("testimoniId", testimoniId);
+
+      const res = await fetch("/api/foto-testimoni", {
+        method: "POST",
+        body: fd,
+      });
+
+      if (!res.ok) throw new Error("Gagal upload foto");
+
+      const result = await res.json();
+      if (!result.url) throw new Error("URL foto tidak ditemukan");
+
+      const updateRes = await fetch(`/api/testimoni/${testimoniId}`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ foto_url: result.url }),
+      });
+
+      if (!updateRes.ok) throw new Error("Gagal update foto testimoni");
+    } catch (err) {
+      console.error(err);
+      throw err; // biar ke handle di submit utama
+    }
+  }
+
+  async function handleSubmit() {
+    setLoading(true);
+    setError(null);
+
+    try {
+      // Validasi sederhana (biar gak kirim data kosong kayak harapan)
+      if (!form.nama || !form.kota || !form.mobil || !form.pesan) {
+        throw new Error("Semua field wajib diisi");
+      }
+
+      const res = await fetch("/api/testimoni", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...form,
+          bintang: parseInt(form.bintang),
+        }),
+      });
+
+      if (!res.ok) throw new Error("Gagal menyimpan testimoni");
+
+      const result = await res.json();
+      if (!result.data?.id) throw new Error("Data tidak valid dari server");
+
+      if (foto) {
+        await handleUploadFoto(result.data.id);
+      }
+
+      router.push("/admin/testimoni");
+    } catch (err) {
+      console.error(err);
+      setError(err.message || "Terjadi kesalahan");
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  const inputClass =
+    "w-full bg-slate-700 text-white px-4 py-3 rounded-xl border border-slate-600 focus:outline-none focus:border-cyan-400";
+  const labelClass = "text-gray-400 text-sm mb-1 block";
+
+  return (
+    <main className="min-h-screen bg-slate-900 p-8">
+      <div className="max-w-2xl mx-auto">
+        <div className="flex justify-between items-center mb-8">
+          <h1 className="text-2xl font-bold text-white">Tambah Testimoni</h1>
+          <button
+            onClick={() => router.push("/admin/testimoni")}
+            className="border border-slate-600 text-gray-400 hover:text-white text-sm px-4 py-2 rounded-xl transition"
+          >
+            ← Kembali
+          </button>
+        </div>
+
+        <div className="bg-slate-800 rounded-2xl p-6 border border-slate-700 flex flex-col gap-4">
+          
+          {error && (
+            <div className="bg-red-500/20 text-red-400 text-sm p-3 rounded-xl">
+              {error}
+            </div>
+          )}
+
+          <div>
+            <label className={labelClass}>Nama Pelanggan</label>
+            <input name="nama" value={form.nama} onChange={handleChange} className={inputClass} />
+          </div>
+
+          <div className="grid grid-cols-2 gap-4">
+            <div>
+              <label className={labelClass}>Kota</label>
+              <input name="kota" value={form.kota} onChange={handleChange} className={inputClass} />
+            </div>
+            <div>
+              <label className={labelClass}>Bintang</label>
+              <select name="bintang" value={form.bintang} onChange={handleChange} className={inputClass}>
+                <option value={5}>⭐⭐⭐⭐⭐</option>
+                <option value={4}>⭐⭐⭐⭐</option>
+                <option value={3}>⭐⭐⭐</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label className={labelClass}>Mobil yang Dibeli</label>
+            <input name="mobil" value={form.mobil} onChange={handleChange} className={inputClass} />
+          </div>
+
+          <div>
+            <label className={labelClass}>Pesan / Ulasan</label>
+            <textarea name="pesan" value={form.pesan} onChange={handleChange} className={inputClass} rows={3} />
+          </div>
+
+          <div>
+            <label className={labelClass}>Foto Serah Terima</label>
+            <input
+              type="file"
+              accept="image/*"
+              onChange={(e) => setFoto(e.target.files[0])}
+              className={inputClass}
+            />
+            {foto && <p className="text-cyan-400 text-xs mt-1">{foto.name} dipilih</p>}
+          </div>
+
+          <button
+            onClick={handleSubmit}
+            disabled={loading}
+            className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 rounded-xl transition disabled:opacity-50"
+          >
+            {loading ? "Menyimpan..." : "Simpan Testimoni"}
+          </button>
+        </div>
+      </div>
+    </main>
+  );
+}

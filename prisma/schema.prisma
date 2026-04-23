@@ -1,0 +1,52 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model Mobil {
+  id          Int         @id @default(autoincrement())
+  nama        String
+  harga       Int
+  tahun       Int
+  transmisi   String
+  bahan_bakar String
+  kilometer   Int
+  warna       String
+  deskripsi   String?
+  tersedia    Boolean     @default(true)
+  createdAt   DateTime    @default(now())
+  fotos       FotoMobil[]
+}
+
+model FotoMobil {
+  id        Int      @id @default(autoincrement())
+  url       String
+  urutan    Int      @default(0)
+  mobilId   Int
+  mobil     Mobil    @relation(fields: [mobilId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+}
+
+model Testimoni {
+  id        Int      @id @default(autoincrement())
+  nama      String
+  kota      String
+  mobil     String
+  pesan     String
+  foto_url  String?
+  bintang   Int      @default(5)
+  createdAt DateTime @default(now())
+}
+
+model FotoHero {
+  id        Int      @id @default(autoincrement())
+  url       String
+  urutan    Int      @default(0)
+  aktif     Boolean  @default(true)
+  createdAt DateTime @default(now())
+}
