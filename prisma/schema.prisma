@@ -50,3 +50,11 @@ model FotoHero {
   aktif     Boolean  @default(true)
   createdAt DateTime @default(now())
 }
+
+model FotoTentang {
+  id        Int      @id @default(autoincrement())
+  url       String
+  urutan    Int      @default(0)
+  aktif     Boolean  @default(true)
+  createdAt DateTime @default(now())
+}
