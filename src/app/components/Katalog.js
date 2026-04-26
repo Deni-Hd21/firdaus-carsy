@@ -1,6 +1,7 @@
 import { prisma } from "@/lib/prisma";
 import { motion } from "framer-motion";
 import KatalogCard from "./KatalogCard";
+import KatalogFilter from "./KatalogFilter";
 
 export const revalidate = 0;
 
@@ -29,18 +30,7 @@ const mobil = await prisma.mobil.findMany({
             Semua unit telah melalui inspeksi ketat dan dilengkapi garansi mesin.
           </p>
         </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {mobil.map((item, index) => (
-            <KatalogCard key={item.id} item={item} index={index} />
-          ))}
-        </div>
-
-        {mobil.length === 0 && (
-          <p className="text-center text-gray-500 mt-12">
-            Belum ada unit tersedia saat ini.
-          </p>
-        )}
+        <KatalogFilter mobil={mobil} />
       </div>
     </section>
   );
