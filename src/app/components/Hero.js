@@ -33,7 +33,7 @@ export default async function Hero() {
             <a href="#katalog" className="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-8 py-3 rounded-full transition text-center">
               Lihat Katalog
             </a>
-            <a href="https://wa.me/6282125171716?text=Halo Pak Aldi, saya ingin konsultasi kredit syariah" target="_blank" className="border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-white font-semibold px-8 py-3 rounded-full transition text-center">
+            <a href="https://wa.me/6281294412914?text=Halo Pak Aldi, saya ingin konsultasi kredit syariah" target="_blank" className="border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-white font-semibold px-8 py-3 rounded-full transition text-center">
               Konsultasi Gratis
             </a>
           </div>
