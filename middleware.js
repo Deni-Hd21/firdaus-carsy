@@ -4,10 +4,12 @@ export async function middleware(request) {
   const { pathname } = request.nextUrl;
 
   if (pathname.startsWith("/admin") && pathname !== "/admin/login") {
-    const token = request.cookies.get("sb-patwrieglmispxadpuhl-auth-token");
-    const token2 = request.cookies.get("sb-patwrieglmispxadpuhl-auth-token.0");
+    const cookies = request.cookies.getAll();
+    const hasSession = cookies.some(
+      (c) => c.name.includes("sb-") && c.name.includes("auth-token")
+    );
 
-    if (!token && !token2) {
+    if (!hasSession) {
       return NextResponse.redirect(new URL("/admin/login", request.url));
     }
   }
