@@ -7,14 +7,14 @@ function FotoSlider({ fotos, nama }) {
 
   if (!fotos || fotos.length === 0) {
     return (
-      <div className="h-48 bg-slate-700 flex items-center justify-center">
+      <div className="aspect-[4/3] bg-slate-700 flex items-center justify-center">
         <p className="text-slate-500 text-sm">Belum ada foto</p>
       </div>
     );
   }
 
   return (
-    <div className="relative h-48 bg-slate-700 overflow-hidden">
+    <div className="relative aspect-[4/3] bg-slate-700 overflow-hidden">
 
       {/* Image with smooth transition */}
       <AnimatePresence mode="wait">
@@ -97,7 +97,9 @@ export default function KatalogCard({ item, index }) {
       <FotoSlider fotos={item.fotos} nama={item.nama} />
 
       <div className="p-5">
-        <h3 className="text-white font-bold text-lg">{item.nama}</h3>
+        <a href={`/mobil/${item.id}`} className="hover:text-cyan-400 transition">
+  <h3 className="text-white font-bold text-lg">{item.nama}</h3>
+</a>
         <p className="text-cyan-400 font-bold text-xl mt-1">{hargaFormatted}</p>
 
         <div className="mt-4 grid grid-cols-2 gap-2 text-sm text-gray-400">
@@ -107,8 +109,12 @@ export default function KatalogCard({ item, index }) {
           <span>🎨 {item.warna}</span>
         </div>
 
+<a href={`/mobil/${item.id}`} className="mt-5 block text-center border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-white font-semibold py-2 rounded-full transition">
+  Lihat Detail
+</a>
+
         <a
-          href={`https://wa.me/628129442914?text=Halo Pak Aldi, saya tertarik dengan ${item.nama} seharga ${hargaFormatted}`}
+          href={`https://wa.me/6281294412914?text=Halo Pak Aldi, saya tertarik dengan ${item.nama} seharga ${hargaFormatted}`}
           target="_blank"
           className="mt-5 block text-center bg-cyan-400 hover:bg-cyan-600 text-white font-semibold py-2 rounded-full transition duration-200"
         >

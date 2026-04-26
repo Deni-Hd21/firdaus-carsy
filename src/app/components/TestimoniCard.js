@@ -9,7 +9,7 @@ export default function TestimoniCard({ item, index }) {
       transition={{ duration: 0.5, delay: index * 0.15 }}
       viewport={{ once: true }}
       className="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-cyan-400 transition">
-      <div className="relative h-56 w-full bg-slate-700 flex flex-col items-center justify-center gap-2">
+      <div className="relative w-full aspect-square bg-slate-700 flex flex-col items-center justify-center gap-2">
         {item.foto_url ? (
           <img src={item.foto_url} alt={item.nama} className="w-full h-full object-cover" />
         ) : (

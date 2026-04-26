@@ -14,14 +14,14 @@ export default function TentangSlider({ fotos }) {
 
   if (!fotos || fotos.length === 0) {
     return (
-      <div className="w-full h-80 bg-slate-800 rounded-2xl flex items-center justify-center border border-slate-700">
+      <div className="w-full aspect-[4/3] bg-slate-800 rounded-2xl flex items-center justify-center border border-slate-700">
         <p className="text-slate-500 text-sm">Belum ada foto</p>
       </div>
     );
   }
 
   return (
-    <div className="relative w-full h-80 rounded-2xl overflow-hidden">
+    <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden">
       {fotos.map((foto, i) => (
         <img key={foto.id} src={foto.url} alt={`Tentang ${i + 1}`} className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${i === aktif ? "opacity-100" : "opacity-0"}`} />
       ))}
