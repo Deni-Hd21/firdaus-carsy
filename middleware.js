@@ -1,23 +1,13 @@
 import { NextResponse } from "next/server";
-import { createServerClient } from "@supabase/ssr";
 
 export async function middleware(request) {
   const { pathname } = request.nextUrl;
 
   if (pathname.startsWith("/admin") && pathname !== "/admin/login") {
-    const supabase = createServerClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL,
-      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
-      {
-        cookies: {
-          get: (name) => request.cookies.get(name)?.value,
-        },
-      }
-    );
+    const token = request.cookies.get("sb-patwrieglmispxadpuhl-auth-token");
+    const token2 = request.cookies.get("sb-patwrieglmispxadpuhl-auth-token.0");
 
-    const { data: { session } } = await supabase.auth.getSession();
-
-    if (!session) {
+    if (!token && !token2) {
       return NextResponse.redirect(new URL("/admin/login", request.url));
     }
   }
