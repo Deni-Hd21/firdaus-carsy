@@ -19,7 +19,7 @@ export default function TentangKamiClient({ fotos }) {
       iconBg: "bg-cyan-400",
     },
     {
-      icon: "/icon/angsuran5thn.svg",
+      icon: "/icon/angsuran-5thn.svg",
       title: "Angsuran Maksimal 5 Tahun",
       description: "Kami menyediakan opsi angsuran dengan tenor hingga maksimal 5 tahun, sehingga Anda dapat merencanakan pembayaran sesuai dengan kemampuan finansial Anda.",
       bgColor: "from-yellow-400 to-yellow-500",
@@ -68,7 +68,7 @@ export default function TentangKamiClient({ fotos }) {
       iconBg: "bg-teal-500",
     },
     {
-      icon: "/icon/tanpa-asurasi.svg",
+      icon: "/icon/tanpa-asuransi.svg",
       title: "Tanpa Asuransi",
       description: "Kami memberikan pilihan tanpa asuransi wajib, sehingga Anda dapat mengelola risiko dan kebutuhan asuransi sesuai dengan kebutuhan pribadi Anda sendiri.",
       bgColor: "from-purple-400 to-purple-500",
