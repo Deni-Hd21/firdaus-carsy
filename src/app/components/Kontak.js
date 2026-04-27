@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function Kontak() {
   return (
-    <section id="kontak" className="bg-slate-900 py-20 px-4">
+    <section id="kontak" className="bg-slate-950 py-20 px-4">
       <div className="max-w-7xl mx-auto">
 
         {/* Heading */}
