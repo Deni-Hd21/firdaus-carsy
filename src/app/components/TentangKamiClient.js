@@ -80,21 +80,26 @@ export default function TentangKamiClient({ fotos }) {
     <div className="space-y-16">
       {/* Bagian Hero dengan Slider dan Deskripsi */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+
+        {/* FIX: ganti x: -60 → y: 40 agar tidak overflow ke kiri di mobile */}
         <motion.div
           className="flex-1 w-full"
-          initial={{ opacity: 0, x: -60 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          viewport={{ once: true }}>
+          viewport={{ once: true }}
+        >
           <TentangSlider fotos={fotos} />
         </motion.div>
 
+        {/* FIX: ganti x: 60 → y: 40 agar tidak overflow ke kanan di mobile */}
         <motion.div
           className="flex-1 text-center md:text-left"
-          initial={{ opacity: 0, x: 60 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}>
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.15 }}
+          viewport={{ once: true }}
+        >
           <span className="text-cyan-400 text-sm font-semibold uppercase tracking-widest">Tentang Kami</span>
           <h2 className="text-3xl md:text-4xl font-bold text-white mt-2">
             Showroom Mobil Bekas <br />
@@ -126,8 +131,8 @@ export default function TentangKamiClient({ fotos }) {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="group relative bg-slate-800 rounded-2xl p-6 border border-slate-700 hover:border-cyan-400/50 transition-all duration-300 overflow-hidden">
-              
+              className="group relative bg-slate-800 rounded-2xl p-6 border border-slate-700 hover:border-cyan-400/50 transition-all duration-300 overflow-hidden"
+            >
               {/* Gradient Background Effect */}
               <div className={`absolute inset-0 bg-gradient-to-br ${feature.bgColor} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}></div>
 
@@ -135,9 +140,9 @@ export default function TentangKamiClient({ fotos }) {
               <div className="relative z-10">
                 {/* Icon */}
                 <div className="flex items-center justify-center mb-4">
-                  <img 
-                    src={feature.icon} 
-                    alt={feature.title} 
+                  <img
+                    src={feature.icon}
+                    alt={feature.title}
                     className="w-20 h-20 drop-shadow-lg"
                   />
                 </div>
