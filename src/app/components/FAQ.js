@@ -91,7 +91,7 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="bg-slate-950 py-20 px-4 relative overflow-hidden">
+    <section id="faq" className="bg-slate-900 py-20 px-4 relative overflow-hidden">
       {/* Subtle background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cyan-500/5 rounded-full blur-3xl pointer-events-none" />
 
