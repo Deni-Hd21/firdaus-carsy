@@ -164,6 +164,30 @@ export default function TentangKamiClient({ fotos }) {
           ))}
         </div>
       </div>
+            {/* Bagian Video YouTube */}
+<div className="max-w-7xl mx-auto w-full mt-16">
+  <div className="text-center mb-8">
+    <span className="text-cyan-400 text-sm font-semibold uppercase tracking-widest">
+      Video Kami
+    </span>
+    <h3 className="text-3xl md:text-4xl font-bold text-white mt-2">
+      Kenal Lebih Dekat <span className="text-cyan-400">Firdaus Cars</span>
+    </h3>
+  </div>
+
+  <div className="relative w-full overflow-hidden rounded-2xl border border-slate-700 shadow-lg">
+    <div className="relative pt-[56.25%]">
+      <iframe
+        className="absolute top-0 left-0 w-full h-full"
+        src="https://www.youtube.com/embed/0kqtJE4L-NA&list=PLzM15dbsPeciTWtupHCsVmc1TxIqObymE"
+        title="YouTube video"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+  </div>
+</div>
     </div>
   );
 }
