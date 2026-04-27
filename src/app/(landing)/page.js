@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import Hero from "../components/Hero";
 import TentangKami from "../components/TentangKami";
 import Testimoni from "../components/Testimoni";
+import FAQ from "../components/FAQ";
 import Kontak from "../components/Kontak";
 import Footer from "../components/Footer";
 import { SkeletonTestimoni, SkeletonHero } from "../components/SkeletonCard";
@@ -49,7 +50,7 @@ export default function Home() {
       }>
         <Testimoni />
       </Suspense>
-
+      <FAQ /> 
       <Kontak />
       <Footer />
     </main>
