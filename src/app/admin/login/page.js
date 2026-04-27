@@ -13,12 +13,21 @@ export default function AdminLogin() {
   async function handleLogin() {
     setLoading(true);
     setError("");
-    const { error } = await supabase.auth.signInWithPassword({ email, password });
+
+    const { data, error } = await supabase.auth.signInWithPassword({
+      email,
+      password,
+    });
+
     if (error) {
       setError("Email atau password salah!");
       setLoading(false);
-    } else {
+      return;
+    }
+
+    if (data.session) {
       router.push("/admin/dashboard");
+      router.refresh();
     }
   }
 
@@ -53,6 +62,7 @@ export default function AdminLogin() {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              onKeyDown={(e) => e.key === "Enter" && handleLogin()}
               className="w-full bg-slate-700 text-white px-4 py-3 rounded-xl border border-slate-600 focus:outline-none focus:border-cyan-400"
               placeholder="••••••••"
             />
