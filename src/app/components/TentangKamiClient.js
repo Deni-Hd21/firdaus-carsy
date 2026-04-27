@@ -179,7 +179,7 @@ export default function TentangKamiClient({ fotos }) {
     <div className="relative pt-[56.25%]">
       <iframe
         className="absolute top-0 left-0 w-full h-full"
-        src="https://www.youtube.com/embed/0kqtJE4L-NA&list=PLzM15dbsPeciTWtupHCsVmc1TxIqObymE"
+        src="https://www.youtube.com/embed/M-Fp-ar8IKI"
         title="YouTube video"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
