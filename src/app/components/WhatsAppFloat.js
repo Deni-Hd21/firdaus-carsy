@@ -7,11 +7,11 @@ export default function WhatsAppFloat() {
   function handleClick() {
     setClicked(true);
     setTimeout(() => setClicked(false), 300);
-  } 
+  }
 
   return (
     
-      href="https://wa.me/6282125171716?text=Halo Pak Aldi, saya ingin konsultasi mengenai pembelian mobil"
+      href="https://wa.me/6282125171716? text=Halo Pak Aldi, saya ingin konsultasi mengenai pembelian mobil"
       target="_blank"
       onClick={handleClick}
       className="fixed bottom-8 right-8 z-50 group"
