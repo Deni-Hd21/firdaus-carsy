@@ -3,6 +3,12 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const faqData = [
+
+  {
+  pertanyaan: "Apa itu Firdaus Carsy?",
+  jawaban:
+    "Firdaus Carsy adalah showroom mobil bekas terpercaya yang berfokus pada sistem jual beli dan pembiayaan kendaraan berbasis syariah. Kami hadir untuk memberikan solusi kepemilikan mobil yang aman, transparan, dan bebas riba, dengan proses yang mudah serta pilihan kendaraan yang berkualitas. Berlokasi di Karawang, Firdaus Carsy melayani berbagai kebutuhan masyarakat yang ingin memiliki mobil dengan cara yang lebih tenang dan sesuai prinsip syariah.\n\nDengan komitmen pada kejujuran dan pelayanan terbaik, Firdaus Carsy menyediakan skema kredit tanpa denda, tanpa provisi, dan tanpa biaya tersembunyi. Kami memahami kebutuhan pelanggan akan kendaraan yang terjangkau dan proses yang cepat, sehingga setiap transaksi dirancang agar nyaman, jelas, dan dapat dipercaya."
+},
   {
     pertanyaan: "Apa itu kredit syari'ah dan bedanya dengan kredit biasa?",
     jawaban:
@@ -72,7 +78,7 @@ function FAQItem({ item, index, isOpen, onToggle }) {
           >
             <div className="px-6 pb-5">
               <div className="h-px bg-slate-700 mb-4" />
-              <p className="text-slate-300 leading-relaxed text-sm md:text-base">
+              <p className="text-slate-300 leading-relaxed text-sm md:text-base whitespace-pre-line">
                 {item.jawaban}
               </p>
             </div>
