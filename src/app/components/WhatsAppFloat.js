@@ -11,11 +11,10 @@ export default function WhatsAppFloat() {
 
   return (
     
-      href="https://wa.me/6281294412914?text=Halo%20Pak%20Aldi,%20saya%20ingin%20konsultasi"
-        target="_blank"
-          rel="noopener noreferrer"
-            onClick={handleClick}
-              className="fixed bottom-8 right-8 z-50 group"
+      <a href="https://wa.me/6282125171716?text=Halo Pak Aldi, saya ingin konsultasi mengenai pembelian mobil"
+      target="_blank"
+      onClick={handleClick}
+      className="fixed bottom-8 right-8 z-50 group"
     >
       {/* Tooltip */}
       <span className="absolute right-16 top-1/2 -translate-y-1/2 bg-white text-slate-800 text-xs font-medium px-3 py-2 rounded-lg shadow-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">

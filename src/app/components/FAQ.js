@@ -9,7 +9,18 @@ const faqData = [
   jawaban:
     "Firdaus Carsy adalah showroom mobil bekas terpercaya yang berfokus pada sistem jual beli dan pembiayaan kendaraan berbasis syariah. Kami hadir untuk memberikan solusi kepemilikan mobil yang aman, transparan, dan bebas riba, dengan proses yang mudah serta pilihan kendaraan yang berkualitas. Berlokasi di Karawang, Firdaus Carsy melayani berbagai kebutuhan masyarakat yang ingin memiliki mobil dengan cara yang lebih tenang dan sesuai prinsip syariah.\n\nDengan komitmen pada kejujuran dan pelayanan terbaik, Firdaus Carsy menyediakan skema kredit tanpa denda, tanpa provisi, dan tanpa biaya tersembunyi. Kami memahami kebutuhan pelanggan akan kendaraan yang terjangkau dan proses yang cepat, sehingga setiap transaksi dirancang agar nyaman, jelas, dan dapat dipercaya."
 },
-  {
+{
+  pertanyaan: "Apa keunggulan membeli mobil di Firdaus Carsy?",
+  jawaban:
+    "Firdaus Carsy menawarkan berbagai keunggulan yang membuat pengalaman membeli mobil menjadi lebih baik:\n\n1. Sistem Syariah: Kami menggunakan akad jual beli (murabahah) yang sesuai dengan prinsip syariah, tanpa bunga (riba), sehingga memberikan ketenangan bagi pelanggan.\n\n2. Proses Mudah dan Cepat: Dengan proses yang sederhana dan cepat, pelanggan dapat memiliki mobil impian mereka tanpa ribet.\n\n3. Transparansi: Harga sudah disepakati di awal dan tidak berubah selama masa cicilan, sehingga tidak ada biaya tersembunyi atau kejutan di kemudian hari.\n\n4. Pelayanan Ramah: Tim kami siap membantu dengan konsultasi gratis untuk menemukan mobil yang sesuai dengan kebutuhan dan budget Anda.\n\n5. Pilihan Kendaraan Berkualitas: Kami menyediakan berbagai pilihan mobil bekas yang telah melalui pemeriksaan kualitas untuk memastikan kepuasan pelanggan."
+},
+{
+    pertanyaan: "Apa itu kredit syari'ah tanpa riba dan bedanya dengan kredit biasa?",
+    jawaban:
+      "Kredit syari'ah menggunakan akad murabahah (jual beli), bukan sistem bunga (riba). Harga sudah disepakati di awal dan tidak berubah selama masa cicilan, sehingga lebih transparan dan sesuai prinsip Islam. Berbeda dengan kredit konvensional yang menggunakan bunga yang bisa berfluktuasi.",
+  },
+
+/*{
     pertanyaan: "Apa itu kredit syari'ah dan bedanya dengan kredit biasa?",
     jawaban:
       "Kredit syari'ah menggunakan akad murabahah (jual beli), bukan sistem bunga (riba). Harga sudah disepakati di awal dan tidak berubah selama masa cicilan, sehingga lebih transparan dan sesuai prinsip Islam. Berbeda dengan kredit konvensional yang menggunakan bunga yang bisa berfluktuasi.",
@@ -38,7 +49,7 @@ const faqData = [
     pertanyaan: "Bagaimana cara memulai proses pembelian?",
     jawaban:
       "Sangat mudah! Cukup hubungi kami via WhatsApp di nomor yang tersedia, ceritakan kebutuhan dan budget Anda, dan tim kami akan membantu mencarikan mobil yang tepat serta menjelaskan simulasi cicilannya secara gratis.",
-  },
+  },*/
 ];
 
 function FAQItem({ item, index, isOpen, onToggle }) {
