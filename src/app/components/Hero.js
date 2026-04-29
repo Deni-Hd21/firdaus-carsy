@@ -25,7 +25,7 @@ export default async function Hero() {
             Mobil Impian, <br />
             <span className="text-cyan-400">Cicilan Berkah</span>
           </h1>
-          <p className="text-blue-200 mt-6 text-lg max-w-lg">
+          <p className="text-blue-100 mt-6 text-lg max-w-lg">
             Jual beli mobil bekas berkualitas dengan sistem kredit syari'ah tanpa riba. Melayani Karawang, Cikampek, Purwakarta, Bandung, dan Jabodetabek.
           </p>
 

@@ -127,7 +127,7 @@ export default function FAQ() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mt-2">
             Pertanyaan yang Sering Ditanyakan
           </h2>
-          <p className="text-gray-400 mt-4 max-w-xl mx-auto">
+          <p className="text-gray-300 mt-4 max-w-xl mx-auto">
             Temukan jawaban atas pertanyaan umum seputar kredit syari'ah dan
             layanan Firdaus Cars.
           </p>
@@ -148,7 +148,7 @@ export default function FAQ() {
 
         {/* CTA bawah */}
         <motion.p
-          className="text-center text-slate-400 text-sm mt-10"
+          className="text-center text-slate-300 text-sm mt-10"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}

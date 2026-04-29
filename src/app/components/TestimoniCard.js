@@ -29,7 +29,7 @@ export default function TestimoniCard({ item, index }) {
             <span key={i} className="text-yellow-500">★</span>
           ))}
         </div>
-        <p className="text-slate-500 text-xs font-semibold uppercase tracking-wider mb-1">{item.mobil}</p>
+        <p className="text-slate-100 text-xs font-semibold uppercase tracking-wider mb-1">{item.mobil}</p>
         <p className="text-gray-400 text-sm leading-relaxed italic">"{item.pesan}"</p>
         <div className="mt-4 flex items-center gap-3 pt-4 border-t border-slate-700">
           <div className="w-9 h-9 rounded-full bg-orange-500 flex items-center justify-center text-white font-bold text-sm">

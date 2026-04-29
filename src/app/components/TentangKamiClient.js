@@ -105,10 +105,10 @@ export default function TentangKamiClient({ fotos }) {
             Showroom Mobil Bekas <br />
             <span className="text-cyan-400">Syari'ah di Karawang</span>
           </h2>
-          <p className="text-gray-400 mt-6 leading-relaxed">
+          <p className="text-gray-100 mt-6 leading-relaxed">
             Firdaus Cars adalah showroom jual beli mobil bekas terpercaya dengan sistem kredit syari'ah tanpa riba. Berlokasi di Kecamatan Kosambi, Kabupaten Karawang, kami melayani pelanggan dari Karawang, Cikampek, Purwakarta, Bandung, hingga Jabodetabek.
           </p>
-          <p className="text-gray-400 mt-4 leading-relaxed">
+          <p className="text-gray-100 mt-4 leading-relaxed">
             Dipimpin oleh Aldi, Firdaus Cars hadir sebagai solusi bagi masyarakat yang ingin memiliki kendaraan dengan cara yang halal, transparan, dan terjangkau tanpa khawatir soal riba.
           </p>
         </motion.div>
@@ -153,7 +153,7 @@ export default function TentangKamiClient({ fotos }) {
                 </h4>
 
                 {/* Description */}
-                <p className="text-gray-400 text-sm leading-relaxed">
+                <p className="text-gray-300 text-sm leading-relaxed">
                   {feature.description}
                 </p>
               </div>
@@ -164,7 +164,8 @@ export default function TentangKamiClient({ fotos }) {
           ))}
         </div>
       </div>
-            {/* Bagian Video YouTube */}
+
+{/* Bagian Video */} 
 <div className="max-w-7xl mx-auto w-full mt-16">
   <div className="text-center mb-8">
     <span className="text-cyan-400 text-sm font-semibold uppercase tracking-widest">
@@ -175,17 +176,50 @@ export default function TentangKamiClient({ fotos }) {
     </h3>
   </div>
 
-  <div className="relative w-full overflow-hidden rounded-2xl border border-slate-700 shadow-lg">
-    <div className="relative pt-[56.25%]">
-      <iframe
-        className="absolute top-0 left-0 w-full h-full"
-        src="https://www.youtube.com/embed/M-Fp-ar8IKI"
-        title="YouTube video"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      ></iframe>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    
+    {/* Video 1 */}
+    <div>
+      <h4 className="text-white font-semibold text-lg mb-3 text-center ">
+        PENJELASAN BAHAYA RIBA
+      </h4>
+
+      <div className="relative w-full overflow-hidden rounded-2xl border border-slate-700 shadow-lg bg-slate-800">
+        <div className="relative pt-[56.25%]">
+          <video
+            className="absolute top-0 left-0 w-full h-full object-cover"
+            controls
+            preload="metadata"
+            playsInline
+          >
+            <source src="https://patwrieglmispxadpuhl.supabase.co/storage/v1/object/public/mobil/vidio-bayaya-riba.mp4" type="video/mp4" />
+            Browser kamu tidak mendukung video.
+          </video>
+        </div>
+      </div>
     </div>
+
+    {/* Video 2 */}
+    <div>
+      <h4 className="text-white font-semibold text-lg mb-3 text-center">
+        CASH DAN KREDIT BEDA HARGA, APAKAH RIBA?
+      </h4>
+
+      <div className="relative w-full overflow-hidden rounded-2xl border border-slate-700 shadow-lg bg-slate-800">
+        <div className="relative pt-[56.25%]">
+          <video
+            className="absolute top-0 left-0 w-full h-full object-cover"
+            controls
+            preload="metadata"
+            playsInline
+          >
+            <source src="https://patwrieglmispxadpuhl.supabase.co/storage/v1/object/public/mobil/cash-kredit-beda-harga.mp4" type="video/mp4" />
+            Browser kamu tidak mendukung video.
+          </video>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
     </div>
