@@ -39,7 +39,7 @@ export default function Navbar() {
           <li><a href="#testimoni" onClick={() => setMenuOpen(false)} className="hover:text-cyan-500 transition">Testimoni</a></li>
           <li><a href="#kontak" onClick={() => setMenuOpen(false)} className="hover:text-cyan-500 transition">Kontak</a></li>
         </ul>
-        <a href="https://wa.me/6282125171716" target="_blank" className="mt-4 block text-center bg-cyan-500 hover:bg-cyan-600 text-white text-sm font-semibold px-5 py-2 rounded-full transition">
+        <a href="https://wa.me/6281294412914" target="_blank" className="mt-4 block text-center bg-cyan-500 hover:bg-cyan-600 text-white text-sm font-semibold px-5 py-2 rounded-full transition">
           Hubungi Kami
         </a>
       </div>
