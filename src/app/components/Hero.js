@@ -10,7 +10,7 @@ export default async function Hero() {
   });
   return (
 <section
-  className="min-h-screen relative flex items-center justify-center px-4 pt-24 md:pt-20
+  className="min-h-screen relative flex items-center justify-center px-4 pt-32 md:pt-20
              bg-[url('/bg-hero.webp')] bg-cover bg-center bg-no-repeat bg-fixed"
 >
   <div className="absolute inset-0 bg-black/75"></div>

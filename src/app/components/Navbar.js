@@ -32,19 +32,17 @@ export default function Navbar() {
           )}
         </button>
       </div>
-      {menuOpen && (
-        <div className="md:hidden bg-white px-4 pb-4 border-t border-slate-100">
-          <ul className="flex flex-col gap-4 text-slate-800 text-sm font-medium pt-4">
-            <li><a href="https://www.instagram.com/firdauscarsy" target="_blank" onClick={() => setMenuOpen(false)} className="hover:text-cyan-500 transition">Katalog</a></li>
-            <li><a href="#tentang" onClick={() => setMenuOpen(false)} className="hover:text-cyan-500 transition">Tentang Kami</a></li>
-            <li><a href="#testimoni" onClick={() => setMenuOpen(false)} className="hover:text-cyan-500 transition">Testimoni</a></li>
-            <li><a href="#kontak" onClick={() => setMenuOpen(false)} className="hover:text-cyan-500 transition">Kontak</a></li>
-          </ul>
-          <a href="https://wa.me/6282125171716" target="_blank" className="mt-4 block text-center bg-cyan-500 hover:bg-cyan-600 text-white text-sm font-semibold px-5 py-2 rounded-full transition">
-            Hubungi Kami
-          </a>
-        </div>
-      )}
+      <div className={`md:hidden bg-white px-4 pb-4 border-t border-slate-100 transition-all duration-700 ease-in-out overflow-hidden ${menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}>
+        <ul className="flex flex-col gap-4 text-slate-800 text-sm font-medium pt-4">
+          <li><a href="https://www.instagram.com/firdauscarsy" target="_blank" onClick={() => setMenuOpen(false)} className="hover:text-cyan-500 transition">Katalog</a></li>
+          <li><a href="#tentang" onClick={() => setMenuOpen(false)} className="hover:text-cyan-500 transition">Tentang Kami</a></li>
+          <li><a href="#testimoni" onClick={() => setMenuOpen(false)} className="hover:text-cyan-500 transition">Testimoni</a></li>
+          <li><a href="#kontak" onClick={() => setMenuOpen(false)} className="hover:text-cyan-500 transition">Kontak</a></li>
+        </ul>
+        <a href="https://wa.me/6282125171716" target="_blank" className="mt-4 block text-center bg-cyan-500 hover:bg-cyan-600 text-white text-sm font-semibold px-5 py-2 rounded-full transition">
+          Hubungi Kami
+        </a>
+      </div>
     </nav>
   );
 }
