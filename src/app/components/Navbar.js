@@ -17,7 +17,7 @@ export default function Navbar() {
           <li><a href="#testimoni" className="hover:text-cyan-500 transition">Testimoni</a></li>
           <li><a href="#kontak" className="hover:text-cyan-500 transition">Kontak</a></li>
         </ul>
-        <a href="https://wa.me/6282125171716" target="_blank" className="hidden md:block bg-cyan-500 hover:bg-cyan-600 text-white text-sm font-semibold px-5 py-2 rounded-full transition">
+        <a href="https://wa.me/6281294412914" target="_blank" className="hidden md:block bg-cyan-500 hover:bg-cyan-600 text-white text-sm font-semibold px-5 py-2 rounded-full transition">
           Hubungi Kami
         </a>
         <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden text-slate-800 focus:outline-none">
