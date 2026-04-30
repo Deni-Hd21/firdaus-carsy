@@ -153,7 +153,7 @@ export default function TentangKamiClient({ fotos }) {
                 </h4>
 
                 {/* Description */}
-                <p className="text-gray-300 text-sm leading-relaxed">
+                <p className="text-white text-sm leading-relaxed">
                   {feature.description}
                 </p>
               </div>
