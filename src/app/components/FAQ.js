@@ -129,7 +129,7 @@ export default function FAQ() {
           </h2>
           <p className="text-gray-300 mt-4 max-w-xl mx-auto">
             Temukan jawaban atas pertanyaan umum seputar kredit syari'ah dan
-            layanan Firdaus Cars.
+            layanan Firdaus Carsy.
           </p>
         </motion.div>
 
