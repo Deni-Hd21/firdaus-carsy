@@ -11,7 +11,7 @@ export default function WhatsAppFloat() {
 
   return (
     
-      <a href="https://wa.me/6282125171716?text=Halo Pak Aldi, saya ingin konsultasi mengenai pembelian mobil"
+      <a href="https://wa.me/6281294412914?text=Halo Pak Aldi, saya ingin konsultasi mengenai pembelian mobil"
       target="_blank"
       onClick={handleClick}
       className="fixed bottom-8 right-8 z-50 group"

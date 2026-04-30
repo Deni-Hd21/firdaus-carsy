@@ -1,15 +1,15 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Firdaus Cars - Jual Beli Mobil Bekas | Kredit Syari'ah Karawang",
-  description: "Jual beli mobil bekas berkualitas dengan sistem kredit syari'ah tanpa riba. Melayani Karawang, Cikampek, Purwakarta, Bandung, dan Jabodetabek. Hubungi 0821-2517-1716.",
+  title: "Firdaus Carsy - Jual Beli Mobil Bekas | Kredit Syari'ah Karawang",
+  description: "Jual beli mobil bekas berkualitas dengan sistem kredit syari'ah tanpa riba. Melayani Karawang, Cikampek, Purwakarta, Bandung, dan Jabodetabek. Hubungi 62 812-9441-2914.",
   keywords: "jual mobil bekas karawang, kredit mobil syariah, mobil bekas karawang, cicilan syariah tanpa riba, firdaus cars",
-  authors: [{ name: "Firdaus Cars" }],
+  authors: [{ name: "Firdaus Carsy" }],
   openGraph: {
-    title: "Firdaus Cars - Kredit Mobil Syari'ah Karawang",
+    title: "Firdaus Carsy - Kredit Mobil Syari'ah Karawang",
     description: "Jual beli mobil bekas berkualitas dengan sistem kredit syari'ah tanpa riba di Karawang.",
-    url: "https://firdauscars.com",
-    siteName: "Firdaus Cars",
+    url: "https://firdauscarsy.com",
+    siteName: "Firdaus Carsy",
     locale: "id_ID",
     type: "website",
     images: [
@@ -17,13 +17,13 @@ export const metadata = {
         url: "/logonav.webp",
         width: 800,
         height: 600,
-        alt: "Firdaus Cars Syariah",
+        alt: "Firdaus Carsy Syariah",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Firdaus Cars - Kredit Mobil Syari'ah Karawang",
+    title: "Firdaus Carsy - Kredit Mobil Syari'ah Karawang",
     description: "Jual beli mobil bekas berkualitas dengan sistem kredit syari'ah tanpa riba di Karawang.",
     images: ["/logonav.webp"],
   },

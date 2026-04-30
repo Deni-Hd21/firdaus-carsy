@@ -106,10 +106,10 @@ export default function TentangKamiClient({ fotos }) {
             <span className="text-cyan-400">Syari'ah di Karawang</span>
           </h2>
           <p className="text-gray-100 mt-6 leading-relaxed">
-            Firdaus Cars adalah showroom jual beli mobil bekas terpercaya dengan sistem kredit syari'ah tanpa riba. Berlokasi di Kecamatan Kosambi, Kabupaten Karawang, kami melayani pelanggan dari Karawang, Cikampek, Purwakarta, Bandung, hingga Jabodetabek.
+            Firdaus Carsy adalah showroom jual beli mobil bekas terpercaya dengan sistem kredit syari'ah tanpa riba. Berlokasi di Kecamatan Kosambi, Kabupaten Karawang, kami melayani pelanggan dari Karawang, Cikampek, Purwakarta, Bandung, hingga Jabodetabek.
           </p>
           <p className="text-gray-100 mt-4 leading-relaxed">
-            Dipimpin oleh Aldi, Firdaus Cars hadir sebagai solusi bagi masyarakat yang ingin memiliki kendaraan dengan cara yang halal, transparan, dan terjangkau tanpa khawatir soal riba.
+            Dipimpin oleh Aldi, Firdaus Carsy hadir sebagai solusi bagi masyarakat yang ingin memiliki kendaraan dengan cara yang halal, transparan, dan terjangkau tanpa khawatir soal riba.
           </p>
         </motion.div>
       </div>
@@ -119,7 +119,7 @@ export default function TentangKamiClient({ fotos }) {
         <div className="text-center mb-12">
           <span className="text-cyan-400 text-sm font-semibold uppercase tracking-widest">Keunggulan Kami</span>
           <h3 className="text-3xl md:text-4xl font-bold text-white mt-2">
-            Skema Layanan <span className="text-cyan-400">Firdaus Cars</span>
+            Skema Layanan <span className="text-cyan-400">Firdaus Carsy</span>
           </h3>
         </div>
 
