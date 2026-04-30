@@ -19,11 +19,11 @@ export default async function Hero() {
    
         <div className="flex-1 text-center md:text-left">
           <span className="text-cyan-400 text-sm font-semibold uppercase tracking-widest">
-            Kredit Mobil Syari'ah Tanpa Riba
+            Solusi Kredit Mobil Syari'ah
           </span>
           <h1 className="text-4xl md:text-6xl font-bold text-white mt-4 leading-tight">
-            Mobil Impian, <br />
-            <span className="text-cyan-400">Cicilan Berkah</span>
+            Proses Cepat, <br />
+            <span className="text-cyan-400">Aman & Terpercaya</span>
           </h1>
           <p className="text-blue-100 mt-6 text-lg max-w-lg">
             Jual beli mobil bekas berkualitas dengan sistem kredit syari'ah tanpa riba. Melayani Karawang, Cikampek, Purwakarta, Bandung, dan Jabodetabek.
