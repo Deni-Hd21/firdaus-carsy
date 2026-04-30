@@ -19,6 +19,48 @@ const faqData = [
     jawaban:
       "Kredit syari'ah menggunakan akad murabahah (jual beli), bukan sistem bunga (riba). Harga sudah disepakati di awal dan tidak berubah selama masa cicilan, sehingga lebih transparan dan sesuai prinsip Islam. Berbeda dengan kredit konvensional yang menggunakan bunga yang bisa berfluktuasi.",
   },
+{
+    pertanyaan: "Bagaimana alur dari pengajuan awal sampai selesai di Firdaus Carsy?",
+    jawaban:
+      "Proses yang dilakukan dari awal sampai selesai adalah sebagai berikut:\n\n 1. Konsumen datang ke Firdaus Carsy untuk mendapatkan penjelasan skema pengajuan secara lengkap.\n 2. Setelah konsumen memahami dan menyetujui skema tanpa riba, maka konsumen melengkapi syarat dokumen yang dibutuhkan untuk proses pengajuan jual beli.\n3. Dokumen kemudian diperiksa dan dianalisa oleh petugas admin Firdaus Carsy.\n 4. Dilakukan penghitungan kemampuan bayar konsumen terhadap besarnya pengajuan konsumen.\n 5. Apabila secara dokumen dan kemampuan bayar, konsumen dinilai layak, maka dokumen dilimpahkan kepada Lembaga Keuangan Syariah (LKS) untuk diproses dengan menggunakan surat pengantar Firdaus Carsy sehingga proses sesuai dengan MoU.\n 6. LKS kemudian melakukan analisa terhadap dokumen yang telah diserahkan oleh Firdaus Carsy.\n 7. Apabila konsumen dinyatakan layak, maka LKS akan mengirimkan dokumen Surat Keputusan kepada Firdaus Carsy.\n8. Kemudian Firdaus Carsy melakukan pemeriksaan terhadap dokumen Surat Keputusan, apakah sesuai dengan MOU yang disepakati, yakni:\n  • Murni Jual Beli\n  • Jelas Serah Terima Barangnya\n  • Tanpa Pasal Denda\n  • Tanpa Biaya Asuransi\n 9. Apabila telah sesuai dengan MoU, maka dilaksanakan persiapan akad jual beli.\n 10. LKS membeli secara langsung objek tersebut.\n 11. Dilakukan serah terima objek dari penjual kepada LKS.\n 12. Setelah objek dimiliki oleh LKS, kemudian LKS menjual kepada konsumen dengan mengambil keuntungan.\n 13. Konsumen menyerahkan Uang Muka setelah dilakukan akad jual beli.\n 14. Kemudian terhadap sisa hutang yang belum dibayar konsumen, dilakukan akad pembiayaan dengan perjanjian secara notaril dan diikat dengan menjaminkan dokumen jaminan melalui Fidusia atau Hak Tanggungan.\n 15. Konsumen melakukan angsuran terhadap kewajibannya setiap bulan."
+},
+{
+    pertanyaan: "Bagaimana teknis jual beli di Firdaus Carsy?",
+    jawaban:
+      "Yang membedakan transaksi adalah :\n\nBarang dibeli lebih dahulu\n1. Ada serah terima yang jelas (objek, kunci, dokumen).\n2. Dijual kepada konsumen."
+},
+{
+    pertanyaan: "Bagaimana cara skema akad Firdaus Carsy bekerja?",
+    jawaban:
+      "Skema akad Firdaus Carsy didasarkan pada prinsip Murni Jual Beli, di mana kendaraan akan dibeli dan kemudian dijual kembali kepada Anda dengan harga yang disepakati."
+},
+{
+    pertanyaan: "Bagaimana teknis serah terima barang melalui skema pengajuan di Firdaus Carsy?",
+    jawaban:
+      "• Untuk motor dilakukan serah terima langsung di dealer/di lokasi motor tersebut, dengan mengeluarkan motor dari gudangnya, dan dilakukan serah terima kunci.\n• Untuk mobil dilakukan serah terima langsung di dealer/di lokasi mobil tersebut, dengan mengeluarkan mobil dari gudangnya, dan dilakukan serah terima kunci."
+},
+{
+    pertanyaan: "Apakah saya perlu membayar biaya admin?",
+    jawaban:
+      "Tidak ada biaya admin. Firdaus Carsy tidak membebankan biaya admin tambahan kepada pelanggan."
+},
+{
+    pertanyaan: "Bagaimana bisa jual beli tidak pakai denda?",
+    jawaban:
+      "Denda merupakan instrumen yang dikembangkan oleh berbagai Lembaga Keuangan dengan alasan memberikan efek jera, padahal dalam Islam, praktek denda dilarang karena merupakan bentuk dari riba jahiliah. Dalam Islam justru jika orang yang berhutang belum mampu membayar hutangnya, maka ia diberikan waktu tangguh bukannya didenda (lihat Al Baqarah: 280). Lain halnya jika seseorang sengaja tidak mau membayar, maka si pemberi hutang boleh mengadukan ke Ulil Amri atau pemerintah agar ia diadili."
+},
+{
+    pertanyaan: "Apa yang dimaksud dengan DP mulai dari 15%?",
+    jawaban:
+      "DP (Down Payment) mulai dari 15% berarti pelanggan hanya perlu membayar 15% dari harga mobil yang akan dibeli sebagai uang muka."
+},
+{
+    pertanyaan: "Ada di kota mana saja Firdaus Carsy?",
+    jawaban:
+      "Firdaus Carsy melayani pelanggan dari Karawang, Cikampek, Purwakarta, Bandung, dan seluruh wilayah Jabodetabek."
+},
+
+
 
 /*{
     pertanyaan: "Apa itu kredit syari'ah dan bedanya dengan kredit biasa?",
