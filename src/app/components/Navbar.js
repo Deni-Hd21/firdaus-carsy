@@ -15,6 +15,7 @@ export default function Navbar() {
           <li><a href="https://www.instagram.com/firdauscarsy" target="_blank" className="hover:text-cyan-500 transition">Katalog</a></li>
           <li><a href="#tentang" className="hover:text-cyan-500 transition">Tentang Kami</a></li>
           <li><a href="#testimoni" className="hover:text-cyan-500 transition">Testimoni</a></li>
+          <li><a href="#faq" className="hover:text-cyan-500 transition">FAQ</a></li>
           <li><a href="#kontak" className="hover:text-cyan-500 transition">Kontak</a></li>
         </ul>
         <a href="https://wa.me/6281294412914" target="_blank" className="hidden md:block bg-cyan-500 hover:bg-cyan-600 text-white text-sm font-semibold px-5 py-2 rounded-full transition">
@@ -37,6 +38,7 @@ export default function Navbar() {
           <li><a href="https://www.instagram.com/firdauscarsy" target="_blank" onClick={() => setMenuOpen(false)} className="hover:text-cyan-500 transition">Katalog</a></li>
           <li><a href="#tentang" onClick={() => setMenuOpen(false)} className="hover:text-cyan-500 transition">Tentang Kami</a></li>
           <li><a href="#testimoni" onClick={() => setMenuOpen(false)} className="hover:text-cyan-500 transition">Testimoni</a></li>
+          <li><a href="#faq" onClick={() => setMenuOpen(false)} className="hover:text-cyan-500 transition">FAQ</a></li>
           <li><a href="#kontak" onClick={() => setMenuOpen(false)} className="hover:text-cyan-500 transition">Kontak</a></li>
         </ul>
         <a href="https://wa.me/6281294412914" target="_blank" className="mt-4 block text-center bg-cyan-500 hover:bg-cyan-600 text-white text-sm font-semibold px-5 py-2 rounded-full transition">
