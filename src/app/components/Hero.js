@@ -26,7 +26,7 @@ export default async function Hero() {
             <span className="text-cyan-400">Aman & Terpercaya</span>
           </h1>
           <p className="text-blue-100 mt-6 text-lg max-w-lg">
-            Jual beli mobil bekas berkualitas dengan sistem kredit syari'ah tanpa riba. Melayani Karawang, Cikampek, Purwakarta, Bandung, dan Jabodetabek.
+            Firdaus Carsy adalah penyedia layanan kredit mobil bekas syariah terpercaya di Karawang yang membantu Anda memiliki kendaraan tanpa riba, tanpa denda, dan tanpa biaya tersembunyi. Kami memberikan kemudahan bagi Anda untuk membeli mobil dari mana saja, dengan proses pengajuan yang cepat, transparan, dan sesuai prinsip syariah. Melayani wilayah Karawang, Cikampek, Purwakarta, Bandung hingga Jabodetabek, Firdaus Carsy hadir sebagai solusi kredit mobil yang aman, fleksibel, dan dapat dipercaya.
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
