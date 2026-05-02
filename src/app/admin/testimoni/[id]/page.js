@@ -76,6 +76,7 @@ fd.append("file", compressed);
 
         const { url } = await resUpload.json();
         updatedForm.foto_url = url;
+        await fetch("/api/revalidate", { method: "POST" });
       }
 
       const res = await fetch(`/api/testimoni/${id}`, {

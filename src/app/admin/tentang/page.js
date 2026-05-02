@@ -27,6 +27,7 @@ export default function AdminHero() {
       fd.append("urutan", fotos.length + i);
       await fetch("/api/foto-tentang", { method: "POST", body: fd });
     }
+    await fetch("/api/revalidate", { method: "POST" });
     setFiles([]);
     await fetchFotos();
     setLoading(false);

@@ -81,7 +81,7 @@ export default function TambahTestimoni() {
       if (foto) {
         await handleUploadFoto(result.data.id);
       }
-
+await fetch("/api/revalidate", { method: "POST" });
       router.push("/admin/testimoni");
     } catch (err) {
       console.error(err);
