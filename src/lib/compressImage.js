@@ -2,7 +2,7 @@ import imageCompression from "browser-image-compression";
 
 export async function compressImage(file) {
   const options = {
-    maxSizeMB: 0.5,          // maksimal 500KB per foto
+    maxSizeMB: 0.25,          // maksimal 250KB per foto
     maxWidthOrHeight: 1280,   // maksimal 1280px
     useWebWorker: true,
     fileType: "image/webp",   // convert ke webp otomatis

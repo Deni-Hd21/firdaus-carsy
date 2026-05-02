@@ -102,11 +102,11 @@ export default function TentangKamiClient({ fotos }) {
         >
           <span className="text-cyan-400 text-sm font-semibold uppercase tracking-widest">Tentang Kami</span>
           <h2 className="text-3xl md:text-4xl font-bold text-white mt-2">
-            Showroom Mobil Bekas <br />
+            Kredit Mobil Bekas <br />
             <span className="text-cyan-400">Syari'ah di Karawang</span>
           </h2>
           <p className="text-gray-100 mt-6 leading-relaxed">
-            Firdaus Carsy adalah showroom jual beli mobil bekas terpercaya dengan sistem kredit syari'ah tanpa riba. Berlokasi di Kecamatan Kosambi, Kabupaten Karawang, kami melayani pelanggan dari Karawang, Cikampek, Purwakarta, Bandung, hingga Jabodetabek.
+            Firdaus Carsy adalah penyedia layanan kredit mobil bekas syari'ah di Karawang. Berlokasi di Kecamatan Kosambi, Kabupaten Karawang, kami melayani pelanggan dari Karawang, Cikampek, Purwakarta, Bandung, hingga Jabodetabek.
           </p>
           <p className="text-gray-100 mt-4 leading-relaxed">
             Dipimpin oleh Aldi, Firdaus Carsy hadir sebagai solusi bagi masyarakat yang ingin memiliki kendaraan dengan cara yang halal, transparan, dan terjangkau tanpa khawatir soal riba.
@@ -123,7 +123,7 @@ export default function TentangKamiClient({ fotos }) {
           </h3>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 text-center md:grid-cols-2 gap-6">
           {features.map((feature, index) => (
             <motion.div
               key={index}
@@ -148,12 +148,12 @@ export default function TentangKamiClient({ fotos }) {
                 </div>
 
                 {/* Title */}
-                <h4 className="text-lg font-bold text-white mb-3">
+                <h4 className="text-3xl font-bold text-white mb-3">
                   {feature.title}
                 </h4>
 
                 {/* Description */}
-                <p className="text-white text-sm leading-relaxed">
+                <p className="text-white text-xl text-sm leading-relaxed">
                   {feature.description}
                 </p>
               </div>
