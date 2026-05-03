@@ -25,35 +25,35 @@ export default function Kontak() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className="flex justify-center">
 
           {/* Info Kontak */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }} // ⬅️ ganti dari x ke y (AMAN)
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="flex flex-col gap-5"
-          >
-            {[
-              { icon: "📍", judul: "Lokasi", isi: "Kecamatan Kosambi, Kabupaten Karawang, Jawa Barat" },
-              { icon: "📱", judul: "WhatsApp", isi: "0812-9441-2914" },
-              { icon: "📸", judul: "Instagram", isi: "@firdauscarsy" },
-              { icon: "🕐", judul: "Jam Operasional", isi: "Senin - Sabtu: 08.00 - 17.00 WIB" },
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="flex flex-col gap-5 w-full max-w-xl mx-auto"
+        >
+                      {[
+              { judul: "Lokasi", isi: "Jl. Jenderal Ahmad Yani By Pass No.73, RT.04/RW.12, Karangpawitan, Kec. Karawang Bar., Karawang, Jawa Barat 41351" },
+              { judul: "WhatsApp", isi: "0812-9441-2914" },
+              { judul: "Instagram", isi: "@firdauscarsy" },
+              { judul: "Tiktok", isi: "@firdauscarsy" },
+              { judul: "Jam Operasional", isi: "Senin - Sabtu: 08.00 - 17.00 WIB" },
             ].map((item, i) => (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, y: 20 }} // ⬅️ aman juga
+                initial={{ opacity: 0, y: 20 }} 
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: i * 0.1 }}
                 viewport={{ once: true }}
                 className="flex items-start gap-4 bg-slate-800 p-4 rounded-xl border border-slate-700"
               >
-                <span className="text-2xl">{item.icon}</span>
-                <div>
-                  <p className="text-cyan-400 font-semibold text-sm">{item.judul}</p>
-                  <p className="text-white mt-1">{item.isi}</p>
-                </div>
+<div className="flex-1 text-center">
+  <p className="text-cyan-400 font-semibold text-sm">{item.judul}</p>
+  <p className="text-white mt-1">{item.isi}</p>
+</div>
               </motion.div>
             ))}
 
@@ -66,7 +66,7 @@ export default function Kontak() {
             </a>
           </motion.div>
 
-          {/* Google Maps */}
+          {/* Google Maps 
           <div className="overflow-hidden rounded-2xl border border-slate-700">
             <motion.div
               initial={{ opacity: 0, y: 40 }} // ⬅️ FIX utama di sini
@@ -83,6 +83,7 @@ export default function Kontak() {
               />
             </motion.div>
           </div>
+          */}
 
         </div>
       </div>

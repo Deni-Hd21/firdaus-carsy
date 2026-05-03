@@ -57,7 +57,7 @@ const faqData = [
 {
     pertanyaan: "Ada di kota mana saja Firdaus Carsy?",
     jawaban:
-      "Firdaus Carsy melayani pelanggan dari Karawang, Cikampek, Purwakarta, Bandung, dan seluruh wilayah Jabodetabek."
+      "Firdaus Carsy melayani pelanggan dari Karawang, Palembang, Bandung, Sunter, Jakarta Selatan, Makassar, Bekasi, Surabaya, Malang, Medan, Balikpapan, Bogor, Kendari, Pontianak, Batam, Pekanbaru, Bsd, Jakarta Utara, Samarinda, Sidoarjo, Tangerang."
 },
 
 ];

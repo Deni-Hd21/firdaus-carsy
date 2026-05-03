@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 
 export default function TentangKamiClient({ fotos }) {
-
+{/*  
   const cityGroups = [
     {
       island: "Sumatera",
@@ -35,6 +35,7 @@ export default function TentangKamiClient({ fotos }) {
       cities: ["Makassar", "Kendari"],
     },
   ];
+   */}
 
   const features = [
     {
@@ -149,7 +150,7 @@ export default function TentangKamiClient({ fotos }) {
         </motion.div>
       </div>
 
-      {/* ✅ KOTA (SUDAH DIUPDATE) */}
+      {/* kota0 
       <div className="max-w-7xl mx-auto w-full">
         <div className="text-center mb-12">
           <span className="text-cyan-400 text-sm font-semibold uppercase tracking-widest">
@@ -189,6 +190,7 @@ export default function TentangKamiClient({ fotos }) {
           ))}
         </div>
       </div>
+      */}
 
       {/* ✅ KEUNGGULAN KAMI (100% ASLI, TIDAK DIUBAH) */}
       <div className="max-w-7xl mx-auto w-full">

@@ -16,8 +16,24 @@ export default async function Hero() {
   <div className="absolute inset-0 bg-black/75"></div>
 
   <div className="relative max-w-7xl mx-auto w-full flex flex-col md:flex-row items-center gap-9">
-   
+ 
         <div className="flex-1 text-center md:text-left">
+
+          <h1 className="text-4xl md:text-6xl font-bold text-white mt-4 leading-tight">
+            Solusi Kredit, <br />
+            <span className="text-cyan-400">Mobil Syari'ah</span>
+          </h1>
+
+          <span className="text-white text-lg font-semibold uppercase tracking-widest">
+            <h1>
+              Proses Cepat, Aman & Terpercaya 
+            </h1>
+          </span>
+          <p className=" mt-6 text-lg max-w-lg">
+            Firdaus Carsy adalah penyedia layanan kredit mobil bekas syariah terpercaya di Karawang yang membantu Anda memiliki kendaraan tanpa riba, tanpa denda, dan tanpa biaya tersembunyi. Kami memberikan kemudahan bagi Anda untuk membeli mobil dari mana saja, dengan proses pengajuan yang cepat, transparan, dan sesuai prinsip syariah. Melayani wilayah Karawang, Cikampek, Purwakarta, Bandung hingga Jabodetabek, Firdaus Carsy hadir sebagai solusi kredit mobil yang aman, fleksibel, dan dapat dipercaya.
+          </p>
+
+          {/* ukuran sebelumnya   
           <span className="text-cyan-400 text-sm font-semibold uppercase tracking-widest">
             <h1>
               Solusi Kredit Mobil Syari'ah
@@ -30,6 +46,7 @@ export default async function Hero() {
           <p className=" mt-6 text-lg max-w-lg">
             Firdaus Carsy adalah penyedia layanan kredit mobil bekas syariah terpercaya di Karawang yang membantu Anda memiliki kendaraan tanpa riba, tanpa denda, dan tanpa biaya tersembunyi. Kami memberikan kemudahan bagi Anda untuk membeli mobil dari mana saja, dengan proses pengajuan yang cepat, transparan, dan sesuai prinsip syariah. Melayani wilayah Karawang, Cikampek, Purwakarta, Bandung hingga Jabodetabek, Firdaus Carsy hadir sebagai solusi kredit mobil yang aman, fleksibel, dan dapat dipercaya.
           </p>
+          */}
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a href="https://www.instagram.com/firdauscarsy" target="_blank" className="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-8 py-3 rounded-full transition text-center">
