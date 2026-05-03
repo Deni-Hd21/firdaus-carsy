@@ -4,6 +4,7 @@ import TentangKamiClient from "./TentangKamiClient";
 export const revalidate = 0;
 
 export default async function TentangKami() {
+  
   const fotos = await prisma.fotoTentang.findMany({
     where: { aktif: true },
     orderBy: { urutan: "asc" },

@@ -14,14 +14,14 @@ export default function HeroSlider({ fotos }) {
 
   if (!fotos || fotos.length === 0) {
     return (
-      <div className="w-full aspect-video bg-slate-800 rounded-2xl flex items-center justify-center border border-slate-700">
+      <div className="w-full aspect-video bg-slate-800 rounded-1x2 flex items-center justify-center border border-slate-700">
         <p className="text-slate-500 text-sm">Belum ada foto</p>
       </div>
     );
   }
 
   return (
-    <div className="relative w-full aspect-video rounded-2xl overflow-hidden">
+    <div className="mb-5 relative w-full aspect-[2/3] sm:aspect-[2/3] md:aspect-[3/4] lg:aspect-[2/3] rounded-2xl overflow-hidden max-h-[650px] max-w-[450px] mx-auto border border-slate-700 shadow-lg bg-slate-800">
       {fotos.map((foto, i) => (
         <img
           key={foto.id}

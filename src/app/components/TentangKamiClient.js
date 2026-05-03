@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import TentangSlider from "./TentangSlider";
+
 
 export default function TentangKamiClient({ fotos }) {
 
@@ -112,9 +112,9 @@ export default function TentangKamiClient({ fotos }) {
    return (
     <div className="space-y-16">
       {/* Bagian Hero dengan Slider dan Deskripsi */}
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+      <div className="max-w-4xl mx-auto text-center">
 
-        {/* FIX: ganti x: -60 → y: 40 agar tidak overflow ke kiri di mobile */}
+        {/* FIX: ganti x: -60 → y: 40 agar tidak overflow ke kiri di mobile 
         <motion.div
           className="flex-1 w-full"
           initial={{ opacity: 0, y: 40 }}
@@ -123,16 +123,16 @@ export default function TentangKamiClient({ fotos }) {
           viewport={{ once: true }}
         >
           <TentangSlider fotos={fotos} />
-        </motion.div>
+        </motion.div>*/}
 
         {/* FIX: ganti x: 60 → y: 40 agar tidak overflow ke kanan di mobile */}
         <motion.div
-          className="flex-1 text-center md:text-left"
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.15 }}
-          viewport={{ once: true }}
-        >
+        className="w-full"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
           <span className="text-cyan-400 text-sm font-semibold uppercase tracking-widest">Tentang Kami</span>
           <h2 className="text-3xl md:text-4xl font-bold text-white mt-2">
             Kredit Mobil Bekas <br />
