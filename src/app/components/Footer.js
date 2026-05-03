@@ -15,11 +15,12 @@ export default function Footer() {
           </div>
         </div>
         <p className="text-slate-400 text-sm text-center w-full border-t border-slate-100 pt-4">
-          © 2026 Firdaus Carsy. All rights reserved.
-        </p>
-                <p className="text-slate-400 text-sm text-center w-full border-t border-slate-100 pt-4">
           Powered by : Deni x Yuli
         </p>
+        <p className="text-slate-400 text-sm text-center w-full border-t border-slate-100 pt-4">
+          © 2026 Firdaus Carsy. All rights reserved.
+        </p>
+
       </div>
     </footer>
   );
