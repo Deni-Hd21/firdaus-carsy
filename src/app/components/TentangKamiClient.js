@@ -153,10 +153,10 @@ export default function TentangKamiClient({ fotos }) {
       <div className="max-w-7xl mx-auto w-full">
         <div className="text-center mb-12">
           <span className="text-cyan-400 text-sm font-semibold uppercase tracking-widest">
-            Kota yang Tercover
+            Kota yang Tercover Layanan Kami
           </span>
           <h3 className="text-3xl md:text-4xl font-bold text-white mt-2">
-            Layanan <span className="text-cyan-400">Firdaus Carsy</span>
+            <span className="text-white"><h1>Firdaus Carsy</h1></span>
           </h3>
         </div>
 

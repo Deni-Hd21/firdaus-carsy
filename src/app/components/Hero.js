@@ -10,16 +10,18 @@ export default async function Hero() {
   });
   return (
 <section
-  className="min-h-screen relative flex items-center justify-center px-4 pt-32 md:pt-20
+  className="min-h-screen relative flex items-center justify-center px-4 pt-30 md:pt-30
              bg-[url('/bg-hero.webp')] bg-cover bg-center bg-no-repeat bg-fixed"
 >
   <div className="absolute inset-0 bg-black/75"></div>
 
-  <div className="relative max-w-7xl mx-auto w-full flex flex-col md:flex-row items-center gap-12">
+  <div className="relative max-w-7xl mx-auto w-full flex flex-col md:flex-row items-center gap-9">
    
         <div className="flex-1 text-center md:text-left">
           <span className="text-cyan-400 text-sm font-semibold uppercase tracking-widest">
-            Solusi Kredit Mobil Syari'ah
+            <h1>
+              Solusi Kredit Mobil Syari'ah
+            </h1>
           </span>
           <h1 className="text-4xl md:text-6xl font-bold text-white mt-4 leading-tight">
             Proses Cepat, <br />

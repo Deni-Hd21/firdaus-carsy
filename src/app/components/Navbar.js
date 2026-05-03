@@ -33,7 +33,7 @@ export default function Navbar() {
           )}
         </button>
       </div>
-      <div className={`md:hidden bg-white px-4 pb-4 border-t border-slate-100 transition-all duration-700 ease-in-out overflow-hidden ${menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}>
+      <div className={`md:hidden bg-white px-4 pb-0 border-t border-slate-100 transition-all duration-700 ease-in-out overflow-hidden ${menuOpen ? "pb-6 max-h-96 opacity-100" : "max-h-0 opacity-0"}`}>
         <ul className="flex flex-col gap-4 text-slate-800 text-sm font-medium pt-4">
           <li><a href="https://www.instagram.com/firdauscarsy" target="_blank" onClick={() => setMenuOpen(false)} className="hover:text-cyan-500 transition">Katalog</a></li>
           <li><a href="#tentang" onClick={() => setMenuOpen(false)} className="hover:text-cyan-500 transition">Tentang Kami</a></li>
