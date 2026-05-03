@@ -60,38 +60,6 @@ const faqData = [
       "Firdaus Carsy melayani pelanggan dari Karawang, Cikampek, Purwakarta, Bandung, dan seluruh wilayah Jabodetabek."
 },
 
-
-
-/*{
-    pertanyaan: "Apa itu kredit syari'ah dan bedanya dengan kredit biasa?",
-    jawaban:
-      "Kredit syari'ah menggunakan akad murabahah (jual beli), bukan sistem bunga (riba). Harga sudah disepakati di awal dan tidak berubah selama masa cicilan, sehingga lebih transparan dan sesuai prinsip Islam. Berbeda dengan kredit konvensional yang menggunakan bunga yang bisa berfluktuasi.",
-  },
-  {
-    pertanyaan: "Apakah ada uang muka (DP) yang harus dibayar?",
-    jawaban:
-      "Ya, umumnya DP dimulai dari 10–30% dari harga kendaraan. Besaran DP dapat disesuaikan dengan kemampuan dan kesepakatan bersama. Semakin besar DP, semakin ringan cicilan bulanan Anda.",
-  },
-  {
-    pertanyaan: "Berapa lama tenor atau masa cicilan yang tersedia?",
-    jawaban:
-      "Kami menyediakan pilihan tenor mulai dari 12 bulan hingga 60 bulan (1–5 tahun). Anda bisa memilih tenor yang paling sesuai dengan kondisi keuangan Anda.",
-  },
-  {
-    pertanyaan: "Apakah bisa kredit tanpa kartu kredit atau slip gaji?",
-    jawaban:
-      "Bisa! Kami memahami bahwa tidak semua calon pembeli memiliki slip gaji formal. Kami melayani wiraswasta, pedagang, petani, dan profesi informal lainnya. Cukup hubungi kami untuk konsultasi lebih lanjut.",
-  },
-  {
-    pertanyaan: "Wilayah mana saja yang dilayani Firdaus Cars?",
-    jawaban:
-      "Kami melayani area Karawang, Cikampek, Purwakarta, Subang, Bandung, dan seluruh wilayah Jabodetabek. Untuk wilayah lain di luar area tersebut, silakan hubungi kami terlebih dahulu.",
-  },
-  {
-    pertanyaan: "Bagaimana cara memulai proses pembelian?",
-    jawaban:
-      "Sangat mudah! Cukup hubungi kami via WhatsApp di nomor yang tersedia, ceritakan kebutuhan dan budget Anda, dan tim kami akan membantu mencarikan mobil yang tepat serta menjelaskan simulasi cicilannya secara gratis.",
-  },*/
 ];
 
 function FAQItem({ item, index, isOpen, onToggle }) {
@@ -107,7 +75,7 @@ function FAQItem({ item, index, isOpen, onToggle }) {
         onClick={onToggle}
         className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left group"
       >
-        <span className="text-white font-semibold text-base md:text-lg group-hover:text-cyan-400 transition-colors duration-300">
+        <span className="text-white font-semibold text-base md:text-lg group-hover:text-cyan-400 transition-colors duration-600">
           {item.pertanyaan}
         </span>
         <motion.span
@@ -131,7 +99,7 @@ function FAQItem({ item, index, isOpen, onToggle }) {
           >
             <div className="px-6 pb-5">
               <div className="h-px bg-slate-700 mb-4" />
-              <p className="text-slate-300 leading-relaxed text-sm md:text-base whitespace-pre-line">
+              <p className="text-slate-300 leading-relaxed text-base md:text-lg whitespace-pre-line">
                 {item.jawaban}
               </p>
             </div>
@@ -197,13 +165,21 @@ export default function FAQ() {
           viewport={{ once: true }}
         >
           Masih ada pertanyaan lain?{" "}
+                      <a
+              href="https://wa.me/6281294412914?text=Halo Pak Aldi, saya ingin konsultasi mengenai pembelian mobil"
+              target="_blank"
+              className="mt-2 block text-center bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-8 py-4 rounded-full transition text-lg"
+            >
+              💬 Tanyakan Via WhatsApp
+            </a>
+            {/* <a
           <a
             href="https://wa.me/6281294412914?text=Halo Pak Aldi, saya ingin bertanya mengenai Firdaus Cars"
             target="_blank"
             className="text-cyan-400 hover:text-cyan-300 font-semibold underline underline-offset-2 transition-colors"
           >
             Tanya langsung via WhatsApp →
-          </a>
+          </a>*/}
         </motion.p>
       </div>
     </section>

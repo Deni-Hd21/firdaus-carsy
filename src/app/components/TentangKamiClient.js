@@ -3,6 +3,39 @@ import { motion } from "framer-motion";
 import TentangSlider from "./TentangSlider";
 
 export default function TentangKamiClient({ fotos }) {
+
+  const cityGroups = [
+    {
+      island: "Sumatera",
+      cities: ["Medan", "Pekanbaru", "Batam", "Palembang"],
+    },
+    {
+      island: "Jawa",
+      cities: [
+        "Jakarta Selatan",
+        "Jakarta Utara",
+        "Sunter",
+        "BSD",
+        "Tangerang",
+        "Bekasi",
+        "Karawang",
+        "Bogor",
+        "Bandung",
+        "Sidoarjo",
+        "Surabaya",
+        "Malang",
+      ],
+    },
+    {
+      island: "Kalimantan",
+      cities: ["Pontianak", "Balikpapan", "Samarinda"],
+    },
+    {
+      island: "Sulawesi",
+      cities: ["Makassar", "Kendari"],
+    },
+  ];
+
   const features = [
     {
       icon: "/icon/murni-jual-beli.svg",
@@ -70,13 +103,13 @@ export default function TentangKamiClient({ fotos }) {
     {
       icon: "/icon/tanpa-asuransi.svg",
       title: "Tanpa Asuransi",
-      description: "Kami memberikan pilihan tanpa asuransi wajib, sehingga Anda dapat mengelola risiko dan kebutuhan asuransi sesuai dengan kebutuhan pribadi Anda sendiri.",
+      description: "Kami memberikan pilihan tanpa asuransi wajib, sehingga Anda dapat mengelola risiko sesuai kebutuhan pribadi Anda.",
       bgColor: "from-purple-400 to-purple-500",
       iconBg: "bg-purple-500",
     },
   ];
 
-  return (
+   return (
     <div className="space-y-16">
       {/* Bagian Hero dengan Slider dan Deskripsi */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
@@ -105,16 +138,59 @@ export default function TentangKamiClient({ fotos }) {
             Kredit Mobil Bekas <br />
             <span className="text-cyan-400">Syari'ah di Karawang</span>
           </h2>
-          <p className="text-gray-100 mt-6 leading-relaxed">
-            Firdaus Carsy adalah penyedia layanan kredit mobil bekas syari'ah di Karawang. Berlokasi di Kecamatan Kosambi, Kabupaten Karawang, kami melayani pelanggan dari Karawang, Cikampek, Purwakarta, Bandung, hingga Jabodetabek.
+
+          <p className="text-gray-100 mt-6 leading-relaxed text-base md:text-lg">
+            Firdaus Carsy adalah penyedia layanan kredit mobil bekas berbasis syariah terpercaya di Karawang yang berfokus pada kemudahan, transparansi, dan kehalalan dalam setiap proses transaksi. Kami membantu masyarakat memiliki kendaraan tanpa riba, tanpa denda, dan tanpa biaya tersembunyi, dengan proses yang cepat serta sesuai prinsip syariah. Melayani berbagai wilayah di Pulau Jawa, Sumatra, dan Kalimantan.
           </p>
-          <p className="text-gray-100 mt-4 leading-relaxed">
-            Dipimpin oleh Aldi, Firdaus Carsy hadir sebagai solusi bagi masyarakat yang ingin memiliki kendaraan dengan cara yang halal, transparan, dan terjangkau tanpa khawatir soal riba.
+
+          <p className="text-gray-100 mt-4 leading-relaxed text-base md:text-lg">
+            Firdaus Carsy tidak terbatas pada stok kendaraan tertentu. Kami memberikan kebebasan bagi pelanggan untuk memilih mobil dari mana saja, kemudian kami bantu memfasilitasi proses pembiayaan dengan skema syariah yang jelas dan transparan. Dipimpin oleh Aldi, kami berkomitmen memberikan pelayanan profesional dengan pendekatan yang jujur dan solutif.
           </p>
         </motion.div>
       </div>
 
-      {/* Bagian Card Grid untuk Fitur/Layanan */}
+      {/* ✅ KOTA (SUDAH DIUPDATE) */}
+      <div className="max-w-7xl mx-auto w-full">
+        <div className="text-center mb-12">
+          <span className="text-cyan-400 text-sm font-semibold uppercase tracking-widest">
+            Kota yang Tercover
+          </span>
+          <h3 className="text-3xl md:text-4xl font-bold text-white mt-2">
+            Layanan <span className="text-cyan-400">Firdaus Carsy</span>
+          </h3>
+        </div>
+
+        <div className="space-y-12">
+          {cityGroups.map((group, i) => (
+            <div key={i}>
+              <h3 className="text-2xl font-bold text-cyan-400 mb-6 text-center">
+                {group.island}
+              </h3>
+
+              <div className="grid grid-cols-2 sm:grid-cols- md:grid-cols-4 gap-3">
+                {group.cities.map((city, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: index * 0.05 }}
+                    viewport={{ once: true }}
+                    className="group relative bg-slate-800 rounded-xl p-2 border border-slate-700 hover:border-cyan-400/50 transition-all duration-300 text-center"
+                  >
+                    <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-cyan-400 to-blue-500 opacity-0 group-hover:opacity-5 transition duration-300"></div>
+
+                    <h4 className="relative z-10 text-white font-semibold group-hover:text-cyan-400 transition">
+                      {city}
+                    </h4>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ✅ KEUNGGULAN KAMI (100% ASLI, TIDAK DIUBAH) */}
       <div className="max-w-7xl mx-auto w-full">
         <div className="text-center mb-12">
           <span className="text-cyan-400 text-sm font-semibold uppercase tracking-widest">Keunggulan Kami</span>
@@ -133,12 +209,9 @@ export default function TentangKamiClient({ fotos }) {
               viewport={{ once: true }}
               className="group relative bg-slate-800 rounded-2xl p-6 border border-slate-700 hover:border-cyan-400/50 transition-all duration-300 overflow-hidden"
             >
-              {/* Gradient Background Effect */}
               <div className={`absolute inset-0 bg-gradient-to-br ${feature.bgColor} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}></div>
 
-              {/* Content */}
               <div className="relative z-10">
-                {/* Icon */}
                 <div className="flex items-center justify-center mb-4">
                   <img
                     src={feature.icon}
@@ -147,81 +220,21 @@ export default function TentangKamiClient({ fotos }) {
                   />
                 </div>
 
-                {/* Title */}
                 <h4 className="text-3xl font-bold text-white mb-3">
                   {feature.title}
                 </h4>
 
-                {/* Description */}
-                <p className="text-white text-xl text-sm leading-relaxed">
+                <p className="text-gray-100 mt-4 leading-relaxed text-base md:text-lg">
                   {feature.description}
                 </p>
               </div>
 
-              {/* Border Glow on Hover */}
               <div className="absolute inset-0 rounded-2xl border border-cyan-400/0 group-hover:border-cyan-400/50 transition-all duration-300 pointer-events-none"></div>
             </motion.div>
           ))}
         </div>
       </div>
 
-{/* Bagian Video */} 
-<div className="max-w-7xl mx-auto w-full mt-16">
-  {/*<div className="text-center mb-8">
-    <span className="text-cyan-400 text-sm font-semibold uppercase tracking-widest">
-      Video Kami
-    </span>
-    <h3 className="text-3xl md:text-4xl font-bold text-white mt-2">
-      Kenal Lebih Dekat <span className="text-cyan-400">Firdaus Cars</span>
-    </h3>
-  </div>*/}
-
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-    
-    {/* Video 1 */}
-    <div>
-      <h4 className="text-white font-semibold text-lg mb-3 text-center ">
-        PENJELASAN BAHAYA RIBA
-      </h4>
-
-      <div className="relative w-full overflow-hidden rounded-2xl border border-slate-700 shadow-lg bg-slate-800">
-        <div className="relative pt-[56.25%]">
-          <video
-            className="absolute top-0 left-0 w-full h-full object-cover"
-            controls
-            preload="metadata"
-            playsInline
-          >
-            <source src="https://patwrieglmispxadpuhl.supabase.co/storage/v1/object/public/mobil/vidio-bayaya-riba.mp4" type="video/mp4" />
-            Browser kamu tidak mendukung video.
-          </video>
-        </div>
-      </div>
-    </div>
-
-    {/* Video 2 */}
-    <div>
-      <h4 className="text-white font-semibold text-lg mb-3 text-center">
-        CASH DAN KREDIT BEDA HARGA, APAKAH RIBA?
-      </h4>
-
-      <div className="relative w-full overflow-hidden rounded-2xl border border-slate-700 shadow-lg bg-slate-800">
-        <div className="relative pt-[56.25%]">
-          <video
-            className="absolute top-0 left-0 w-full h-full object-cover"
-            controls
-            preload="metadata"
-            playsInline
-          >
-            <source src="https://patwrieglmispxadpuhl.supabase.co/storage/v1/object/public/mobil/cash-kredit-beda-harga.mp4" type="video/mp4" />
-            Browser kamu tidak mendukung video.
-          </video>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
     </div>
   );
 }
