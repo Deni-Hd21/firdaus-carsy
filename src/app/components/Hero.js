@@ -27,7 +27,7 @@ export default async function Hero() {
             Proses Cepat, <br />
             <span className="text-cyan-400">Aman & Terpercaya</span>
           </h1>
-          <p className="text-blue-100 mt-6 text-lg max-w-lg">
+          <p className=" mt-6 text-lg max-w-lg">
             Firdaus Carsy adalah penyedia layanan kredit mobil bekas syariah terpercaya di Karawang yang membantu Anda memiliki kendaraan tanpa riba, tanpa denda, dan tanpa biaya tersembunyi. Kami memberikan kemudahan bagi Anda untuk membeli mobil dari mana saja, dengan proses pengajuan yang cepat, transparan, dan sesuai prinsip syariah. Melayani wilayah Karawang, Cikampek, Purwakarta, Bandung hingga Jabodetabek, Firdaus Carsy hadir sebagai solusi kredit mobil yang aman, fleksibel, dan dapat dipercaya.
           </p>
 
@@ -40,7 +40,7 @@ export default async function Hero() {
             </a>
           </div>
 
-          <div className="mt-12 flex gap-8 justify-center md:justify-start">
+          <div className="mt-12 flex gap-8 mb-8 justify-center md:justify-start">
             <div>
               <p className="text-3xl font-bold text-white">50+</p>
               <p className="text-blue-300 text-sm">Unit Tersedia</p>

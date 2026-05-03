@@ -139,11 +139,11 @@ export default function TentangKamiClient({ fotos }) {
             <span className="text-cyan-400">Syari'ah di Karawang</span>
           </h2>
 
-          <p className="text-gray-100 mt-6 leading-relaxed text-base md:text-lg">
+          <p className="mt-6 leading-relaxed text-base md:text-lg">
             Firdaus Carsy adalah penyedia layanan kredit mobil bekas berbasis syariah terpercaya di Karawang yang berfokus pada kemudahan, transparansi, dan kehalalan dalam setiap proses transaksi. Kami membantu masyarakat memiliki kendaraan tanpa riba, tanpa denda, dan tanpa biaya tersembunyi, dengan proses yang cepat serta sesuai prinsip syariah. Melayani berbagai wilayah di Pulau Jawa, Sumatra, dan Kalimantan.
           </p>
 
-          <p className="text-gray-100 mt-4 leading-relaxed text-base md:text-lg">
+          <p className="mt-4 leading-relaxed text-base md:text-lg">
             Firdaus Carsy tidak terbatas pada stok kendaraan tertentu. Kami memberikan kebebasan bagi pelanggan untuk memilih mobil dari mana saja, kemudian kami bantu memfasilitasi proses pembiayaan dengan skema syariah yang jelas dan transparan. Dipimpin oleh Aldi, kami berkomitmen memberikan pelayanan profesional dengan pendekatan yang jujur dan solutif.
           </p>
         </motion.div>
@@ -224,7 +224,7 @@ export default function TentangKamiClient({ fotos }) {
                   {feature.title}
                 </h4>
 
-                <p className="text-gray-100 mt-4 leading-relaxed text-base md:text-lg">
+                <p className="mt-4 leading-relaxed text-base md:text-lg">
                   {feature.description}
                 </p>
               </div>
@@ -234,6 +234,64 @@ export default function TentangKamiClient({ fotos }) {
           ))}
         </div>
       </div>
+
+{/* Bagian Video */} 
+<div className="max-w-7xl mx-auto w-full mt-16">
+  {/*<div className="text-center mb-8">
+    <span className="text-cyan-400 text-sm font-semibold uppercase tracking-widest">
+      Video Kami
+    </span>
+    <h3 className="text-3xl md:text-4xl font-bold text-white mt-2">
+      Kenal Lebih Dekat <span className="text-cyan-400">Firdaus Cars</span>
+    </h3>
+  </div>*/}
+
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    
+    {/* Video 1 */}
+    <div>
+      <h4 className="text-white font-semibold text-lg mb-3 text-center ">
+        PENJELASAN BAHAYA RIBA
+      </h4>
+
+      <div className="relative w-full overflow-hidden rounded-2xl border border-slate-700 shadow-lg bg-slate-800">
+        <div className="relative pt-[56.25%]">
+          <video
+            className="absolute top-0 left-0 w-full h-full object-cover"
+            controls
+            preload="metadata"
+            playsInline
+          >
+            <source src="https://patwrieglmispxadpuhl.supabase.co/storage/v1/object/public/mobil/vidio-bayaya-riba.mp4" type="video/mp4" />
+            Browser kamu tidak mendukung video.
+          </video>
+        </div>
+      </div>
+    </div>
+
+    {/* Video 2 */}
+    <div>
+      <h4 className="text-white font-semibold text-lg mb-3 text-center">
+        CASH DAN KREDIT BEDA HARGA, APAKAH RIBA?
+      </h4>
+
+      <div className="relative w-full overflow-hidden rounded-2xl border border-slate-700 shadow-lg bg-slate-800">
+        <div className="relative pt-[56.25%]">
+          <video
+            className="absolute top-0 left-0 w-full h-full object-cover"
+            controls
+            preload="metadata"
+            playsInline
+          >
+            <source src="https://patwrieglmispxadpuhl.supabase.co/storage/v1/object/public/mobil/cash-kredit-beda-harga.mp4" type="video/mp4" />
+            Browser kamu tidak mendukung video.
+          </video>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
 
     </div>
   );

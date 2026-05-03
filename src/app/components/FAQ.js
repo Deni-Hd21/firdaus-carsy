@@ -7,7 +7,7 @@ const faqData = [
   {
   pertanyaan: "Apa itu Firdaus Carsy?",
   jawaban:
-    "Firdaus Carsy adalah showroom mobil bekas terpercaya yang berfokus pada sistem jual beli dan pembiayaan kendaraan berbasis syariah. Kami hadir untuk memberikan solusi kepemilikan mobil yang aman, transparan, dan bebas riba, dengan proses yang mudah serta pilihan kendaraan yang berkualitas. Berlokasi di Karawang, Firdaus Carsy melayani berbagai kebutuhan masyarakat yang ingin memiliki mobil dengan cara yang lebih tenang dan sesuai prinsip syariah.\n\nDengan komitmen pada kejujuran dan pelayanan terbaik, Firdaus Carsy menyediakan skema kredit tanpa denda, tanpa provisi, dan tanpa biaya tersembunyi. Kami memahami kebutuhan pelanggan akan kendaraan yang terjangkau dan proses yang cepat, sehingga setiap transaksi dirancang agar nyaman, jelas, dan dapat dipercaya."
+    "Firdaus Carsy adalah penyedia layanan kredit mobil bekas berbasis syariah terpercaya di Karawang yang berfokus pada kemudahan, transparansi, dan kehalalan dalam setiap proses transaksi. Kami membantu masyarakat memiliki kendaraan tanpa riba, tanpa denda, dan tanpa biaya tersembunyi, dengan proses yang cepat serta sesuai prinsip syariah. Melayani berbagai wilayah di Pulau Jawa, Sumatra, dan Kalimantan.\n\nDengan komitmen pada kejujuran dan pelayanan terbaik, Firdaus Carsy menyediakan skema kredit tanpa denda, tanpa provisi, dan tanpa biaya tersembunyi. Kami memahami kebutuhan pelanggan akan kendaraan yang terjangkau dan proses yang cepat, sehingga setiap transaksi dirancang agar nyaman, jelas, dan dapat dipercaya."
 },
 {
   pertanyaan: "Apa keunggulan membeli mobil di Firdaus Carsy?",
@@ -137,7 +137,7 @@ export default function FAQ() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mt-2">
             Pertanyaan yang Sering Ditanyakan
           </h2>
-          <p className="text-green mt-4 max-w-xl mx-auto">
+          <p className="mt-4 max-w-xl mx-auto text-base md:text-lg">
             Temukan jawaban atas pertanyaan umum seputar kredit syari'ah dan
             layanan Firdaus Carsy.
           </p>
@@ -158,7 +158,7 @@ export default function FAQ() {
 
         {/* CTA bawah */}
         <motion.p
-          className="text-center text-white text-sm mt-10"
+          className="text-center text-white text-base md:text-lg mt-10"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
