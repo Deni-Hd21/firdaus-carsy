@@ -11,7 +11,7 @@ export default async function Testimoni() {
   return (
     <section id="testimoni" className="relative py-20 px-4 overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-[url('/bg-hero.webp')] bg-cover bg-center bg-fixed" />
+      <div className="absolute inset-0 bg-[url('/bg-hero-v2.0.webp')] bg-cover bg-center bg-fixed" />
       <div className="absolute inset-0 bg-black/75" />
 
       <div className="relative max-w-7xl mx-auto">

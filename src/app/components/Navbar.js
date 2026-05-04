@@ -9,7 +9,12 @@ export default function Navbar() {
     <nav className="fixed left-0 right-0 z-50 top-0 bg-white shadow-md overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center">
-          <Image src="/logonav.webp" alt="Firdaus Cars" width={120} height={50} loading="eager" style={{ width: "120px", height: "auto" }} className="object-contain" />
+          <Image 
+          src="/logo-v2.webp"
+          alt="Firdaus Cars"
+          width={120}
+          height={50}
+          priority/>
         </div>
         <ul className="hidden md:flex gap-8 text-slate-800 text-sm font-medium">
           <li><a href="https://www.instagram.com/firdauscarsy" target="_blank" className="hover:text-cyan-500 transition">Katalog</a></li>
@@ -33,7 +38,7 @@ export default function Navbar() {
           )}
         </button>
       </div>
-      <div className={`md:hidden bg-white px-4 pb-0 border-t border-slate-100 transition-all duration-700 ease-in-out overflow-hidden ${menuOpen ? "pb-6 max-h-96 opacity-100" : "max-h-0 opacity-0"}`}>
+      <div className={`md:hidden bg-white px-4 pb-0 border-t border-slate-100 transition-all duration-500 ease-in-out overflow-hidden ${menuOpen ? "pb-6 max-h-96 opacity-100" : "max-h-0 opacity-0"}`}>
         <ul className="flex flex-col gap-4 text-slate-800 text-sm font-medium pt-4">
           <li><a href="https://www.instagram.com/firdauscarsy" target="_blank" onClick={() => setMenuOpen(false)} className="hover:text-cyan-500 transition">Katalog</a></li>
           <li><a href="#tentang" onClick={() => setMenuOpen(false)} className="hover:text-cyan-500 transition">Tentang Kami</a></li>
