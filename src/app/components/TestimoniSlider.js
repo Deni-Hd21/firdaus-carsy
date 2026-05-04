@@ -1,96 +1,67 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+
+import { useRef, useEffect, useState } from "react";
+import TestimoniCard from "./TestimoniCard";
 
 export default function TestimoniSlider({ testimoni }) {
-  const trackRef = useRef(null);
-  const [paused, setPaused] = useState(false);
+  const containerRef = useRef(null);
+  const [autoScroll, setAutoScroll] = useState(true);
 
-  // Duplikat data untuk efek infinite scroll
-  const items = [...testimoni, ...testimoni, ...testimoni];
+  const scroll = (direction) => {
+    const container = containerRef.current;
+    const scrollAmount = 340; // width + gap
 
-  useEffect(() => {
-    const track = trackRef.current;
-    if (!track || testimoni.length === 0) return;
-
-    let animationId;
-    let position = 0;
-    const speed = 0.5; // px per frame — semakin kecil semakin lambat
-    const cardWidth = 320 + 24; // lebar card + gap
-    const totalWidth = cardWidth * testimoni.length;
-
-    function animate() {
-      if (!paused) {
-        position += speed;
-        if (position >= totalWidth) {
-          position = 0;
-        }
-        track.style.transform = `translateX(-${position}px)`;
-      }
-      animationId = requestAnimationFrame(animate);
+    if (container) {
+      container.scrollBy({
+        left: direction === "next" ? scrollAmount : -scrollAmount,
+        behavior: "smooth",
+      });
     }
+  };
 
-    animationId = requestAnimationFrame(animate);
-    return () => cancelAnimationFrame(animationId);
-  }, [paused, testimoni.length]);
+  // Auto scroll (pelan & manusiawi)
+  useEffect(() => {
+    if (!autoScroll) return;
 
-  if (!testimoni || testimoni.length === 0) return null;
+    const interval = setInterval(() => {
+      scroll("next");
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [autoScroll]);
 
   return (
     <div
-      className="overflow-hidden"
-      onMouseEnter={() => setPaused(true)}
-      onMouseLeave={() => setPaused(false)}
-      onTouchStart={() => setPaused(true)}
-      onTouchEnd={() => setPaused(false)}
+      className="relative"
+      onMouseEnter={() => setAutoScroll(false)}
+      onMouseLeave={() => setAutoScroll(true)}
     >
-      <div ref={trackRef} className="flex gap-6" style={{ width: "max-content" }}>
-        {items.map((item, index) => (
-          <div
-            key={index}
-            className="w-80 shrink-0 bg-slate-800/90 backdrop-blur-sm rounded-2xl overflow-hidden border border-slate-700 hover:border-cyan-400 transition"
-          >
-            {/* Foto */}
-            <div className="relative w-full aspect-square bg-slate-700">
-              {item.foto_url ? (
-                <img
-                  src={item.foto_url}
-                  alt={`Testimoni ${item.nama}`}
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                />
-              ) : (
-                <div className="w-full h-full flex flex-col items-center justify-center gap-2">
-                  <span className="text-4xl">🤝</span>
-                  <p className="text-slate-400 text-xs">Foto Serah Terima</p>
-                </div>
-              )}
-              <div className="absolute top-3 left-3 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
-                AKAD SERAH TERIMA
-              </div>
-            </div>
-
-            {/* Info */}
-            <div className="p-5">
-              <div className="flex gap-1 mb-3">
-                {[...Array(item.bintang)].map((_, i) => (
-                  <span key={i} className="text-orange-500">★</span>
-                ))}
-              </div>
-              <p className="text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1">{item.mobil}</p>
-              <p className="text-gray-300 text-sm leading-relaxed italic line-clamp-3">"{item.pesan}"</p>
-              <div className="mt-4 flex items-center gap-3 pt-4 border-t border-slate-700">
-                <div className="w-9 h-9 rounded-full bg-cyan-500 flex items-center justify-center text-white font-bold text-sm shrink-0">
-                  {item.nama.charAt(0)}
-                </div>
-                <div>
-                  <p className="text-white font-semibold text-sm">{item.nama}</p>
-                  <p className="text-gray-500 text-xs">{item.kota}</p>
-                </div>
-              </div>
-            </div>
+      {/* Slider */}
+      <div
+        ref={containerRef}
+        className="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide"
+      >
+        {testimoni.map((item, index) => (
+          <div key={index} className="snap-start">
+            <TestimoniCard item={item} />
           </div>
         ))}
       </div>
+
+      {/* Navigation */}
+      <button
+        onClick={() => scroll("prev")}
+        className="absolute left-0 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black text-white p-3 rounded-full"
+      >
+        ‹
+      </button>
+
+      <button
+        onClick={() => scroll("next")}
+        className="absolute right-0 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black text-white p-3 rounded-full"
+      >
+        ›
+      </button>
     </div>
   );
 }
