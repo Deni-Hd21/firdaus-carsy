@@ -9,11 +9,12 @@ export default function Footer() {
           <Image src="/logonav.webp" alt="Firdaus Carsy" width={120} height={50} className="object-contain" />
         </div>  
           <div className="flex gap-4 text-slate-800 text-sm">
+            <a href="https://www.facebook.com/aldi.akhmadf" target="_blank" className="hover:text-cyan-500 transition">Facebook</a>
             <a href="https://www.tiktok.com/@firdauscarsy" target="_blank" className="hover:text-cyan-500 transition">TikTok</a>
             <a href="https://instagram.com/firdauscarsy" target="_blank" className="hover:text-cyan-500 transition">Instagram</a>
             <a href="https://wa.me/6281294412914" target="_blank" className="hover:text-cyan-500 transition">WhatsApp</a>
           </div>
-        </div>
+        </div>Aldi Akhmad Firdaus 
         <p className="text-slate-400 text-sm text-center w-full border-t border-slate-100 pt-4">
           Powered by : Deni x Yuli
         </p>

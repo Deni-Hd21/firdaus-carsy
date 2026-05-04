@@ -137,7 +137,7 @@ export default function TentangKamiClient({ fotos }) {
           <span className="text-cyan-400 text-sm font-semibold uppercase tracking-widest">Tentang Kami</span>
           <h2 className="text-3xl md:text-4xl font-bold text-white mt-2">
             Kredit Mobil Bekas <br />
-            <span className="text-cyan-400">Syari'ah di Karawang</span>
+            <span className="text-cyan-400">Syari'ah Karawang</span>
           </h2>
 
           <p className="mt-6 leading-relaxed text-base md:text-lg">
@@ -145,7 +145,7 @@ export default function TentangKamiClient({ fotos }) {
           </p>
 
           <p className="mt-4 leading-relaxed text-base md:text-lg">
-            Firdaus Carsy tidak terbatas pada stok kendaraan tertentu. Kami memberikan kebebasan bagi pelanggan untuk memilih mobil dari mana saja, kemudian kami bantu memfasilitasi proses pembiayaan dengan skema syariah yang jelas dan transparan. Dipimpin oleh Aldi, kami berkomitmen memberikan pelayanan profesional dengan pendekatan yang jujur dan solutif.
+            Firdaus Carsy tidak terbatas pada stok kendaraan tertentu. Kami memberikan kebebasan bagi pelanggan untuk memilih mobil dari mana saja, kemudian kami bantu memfasilitasi proses pembiayaan dengan skema syariah yang jelas dan transparan. Kami berkomitmen memberikan pelayanan profesional dengan pendekatan yang jujur dan solutif.
           </p>
         </motion.div>
       </div>

@@ -69,7 +69,7 @@ export default function AdminTestimoni() {
       if (!res.ok) {
         throw new Error("Gagal menghapus");
       }
-
+    await fetch("/api/revalidate", { method: "POST" });
       // Optimistic update (lebih cepat dari fetch ulang)
       setTestimoni((prev) => prev.filter((item) => item.id !== id));
     } catch (err) {

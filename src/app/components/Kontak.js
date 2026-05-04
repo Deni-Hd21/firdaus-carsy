@@ -37,9 +37,10 @@ export default function Kontak() {
         >
                       {[
               { judul: "Lokasi", isi: "Jl. Jenderal Ahmad Yani By Pass No.73, RT.04/RW.12, Karangpawitan, Kec. Karawang Bar., Karawang, Jawa Barat 41351" },
-              { judul: "WhatsApp", isi: "0812-9441-2914" },
-              { judul: "Instagram", isi: "@firdauscarsy" },
-              { judul: "Tiktok", isi: "@firdauscarsy" },
+              { judul: <a href="https://wa.me/6281294412914" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300">WhatsApp</a>, isi: <a href="https://wa.me/6281294412914" target="_blank" rel="noopener noreferrer" className="text-white hover:text-cyan-300">0812-9441-2914</a> },
+              { judul: <a href="https://www.instagram.com/firdauscarsy" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300">Instagram</a>, isi: <a href="https://www.instagram.com/firdauscarsy" target="_blank" rel="noopener noreferrer" className="text-white hover:text-cyan-300">@firdauscarsy</a> },
+              { judul: <a href="https://www.tiktok.com/@firdauscarsy" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300">Tiktok</a>, isi: <a href="https://www.tiktok.com/@firdauscarsy" target="_blank" rel="noopener noreferrer" className="text-white hover:text-cyan-300">@firdauscarsy</a> },
+              { judul: <a href="https://www.facebook.com/aldi.akhmadf" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300">Facebook</a>, isi: <a href="https://www.facebook.com/aldi.akhmadf" target="_blank" rel="noopener noreferrer" className="text-white hover:text-cyan-300">Aldi Akhmad Firdaus</a> },
               { judul: "Jam Operasional", isi: "Senin - Sabtu: 08.00 - 17.00 WIB" },
             ].map((item, i) => (
               <motion.div
@@ -60,7 +61,7 @@ export default function Kontak() {
             <a
               href="https://wa.me/6281294412914?text=Halo Pak Aldi, saya ingin konsultasi mengenai pembelian mobil"
               target="_blank"
-              className="mt-2 block text-center bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-8 py-4 rounded-full transition text-lg"
+              className="mt-2 block text-center bg-green-500 hover:bg-green-400 text-white font-semibold px-8 py-4 rounded-full transition text-lg"
             >
               💬 Chat WhatsApp Sekarang
             </a>

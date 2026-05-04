@@ -168,7 +168,7 @@ export default function FAQ() {
                       <a
               href="https://wa.me/6281294412914?text=Halo Pak Aldi, saya ingin konsultasi mengenai pembelian mobil"
               target="_blank"
-              className="mt-2 block text-center bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-8 py-4 rounded-full transition text-lg"
+              className="mt-2 block text-center bg-green-500 hover:bg-green-400 text-white font-semibold px-8 py-4 rounded-full transition text-lg"
             >
               💬 Tanyakan Via WhatsApp
             </a>

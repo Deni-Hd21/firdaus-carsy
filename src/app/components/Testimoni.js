@@ -30,7 +30,7 @@ export default async function Testimoni() {
 
         <div className="text-center mt-12">
           <p className="text-gray-300 mb-4">Ingin menjadi pelanggan puas kami berikutnya?</p>
-          <a href="https://wa.me/6282125171716?text=Halo Pak Aldi, saya ingin konsultasi mengenai pembelian mobil" target="_blank" className="inline-block bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-8 py-3 rounded-full transition">
+          <a href="https://wa.me/6282125171716?text=Halo Pak Aldi, saya ingin konsultasi mengenai pembelian mobil" target="_blank" className="inline-block bg-red-600 hover:bg-red-400 text-white font-semibold px-8 py-3 rounded-full transition">
             Konsultasi Sekarang
           </a>
         </div>

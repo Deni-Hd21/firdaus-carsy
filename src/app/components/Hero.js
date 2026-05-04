@@ -20,7 +20,7 @@ export default async function Hero() {
         <div className="flex-1 text-center md:text-left">
 
           <h1 className="text-4xl md:text-6xl font-bold text-white mt-4 leading-tight">
-            Solusi Kredit, <br />
+            Solusi Kredit<br />
             <span className="text-cyan-400">Mobil Syari'ah</span>
           </h1>
 
@@ -30,7 +30,15 @@ export default async function Hero() {
             </h1>
           </span>
           <p className=" mt-6 text-lg max-w-lg">
-            Firdaus Carsy adalah penyedia layanan kredit mobil bekas syariah terpercaya di Karawang yang membantu Anda memiliki kendaraan tanpa riba, tanpa denda, dan tanpa biaya tersembunyi. Kami memberikan kemudahan bagi Anda untuk membeli mobil dari mana saja, dengan proses pengajuan yang cepat, transparan, dan sesuai prinsip syariah. Melayani wilayah Karawang, Cikampek, Purwakarta, Bandung hingga Jabodetabek, Firdaus Carsy hadir sebagai solusi kredit mobil yang aman, fleksibel, dan dapat dipercaya.
+            Ingin punya mobil tapi khawatir terjebak riba?
+
+Ingin cicilan yang jelas dari awal sampai lunas?
+
+Ingin proses kredit yang lebih tenang, aman, dan sesuai prinsip syari’ah?
+
+Anda berada di tempat yang tepat.
+
+Di Firdaus Carsy, kami bantu Anda memiliki mobil impian dengan sistem kredit syari’ah tanpa riba, akad jelas, cicilan tetap, dan proses mudah.
           </p>
 
           {/* ukuran sebelumnya   
@@ -52,7 +60,7 @@ export default async function Hero() {
             <a href="https://www.instagram.com/firdauscarsy" target="_blank" className="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-8 py-3 rounded-full transition text-center">
   Lihat Katalog di Instagram
 </a>
-            <a href="https://wa.me/6281294412914?text=Halo Pak Aldi, saya ingin konsultasi kredit syariah" target="_blank" className="border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-white font-semibold px-8 py-3 rounded-full transition text-center">
+            <a href="https://wa.me/6281294412914?text=Halo Pak Aldi, saya ingin konsultasi kredit syariah" target="_blank" className="bg-red-600 text-white-400 hover:bg-red-400 hover:text-white font-semibold px-8 py-3 rounded-full transition text-center">
               Konsultasi Gratis
             </a>
           </div>

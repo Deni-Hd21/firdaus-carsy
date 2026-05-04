@@ -33,11 +33,12 @@ export default function AdminHero() {
     setLoading(false);
   }
 
-  async function handleHapus(id) {
-    if (!confirm("Yakin hapus foto ini?")) return;
-    await fetch(`/api/foto-hero/${id}`, { method: "DELETE" });
-    fetchFotos();
-  }
+async function handleHapus(id) {
+  if (!confirm("Yakin hapus foto ini?")) return;
+  await fetch(`/api/foto-hero/${id}`, { method: "DELETE" });
+  await fetch("/api/revalidate", { method: "POST" });
+  fetchFotos();
+}
 
   return (
     <main className="min-h-screen bg-slate-900 p-8">
