@@ -48,7 +48,7 @@ export default function HeroSlider({ fotos }) {
         key={current.id}
         src={current.url}
         alt={`Hero ${aktif + 1}`}
-        className="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-100"
+        className="absolute inset-0 w-full h-full object-content transition-opacity duration-700 opacity-100"
         loading="eager"
         decoding="async"
       />

@@ -37,7 +37,7 @@ export default function WhatsAppFloat() {
       </div>
 
       {/* Pulse animation */}
-      <span className="absolute inset-0 rounded-full bg-green-500 animate-ping opacity-20" />
+      <span className="absolute inset-0 rounded-full bg-green-500 animate-[ping_2.5s_infinite] opacity-20" />
     </a>
   );
 }
