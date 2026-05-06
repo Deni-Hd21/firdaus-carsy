@@ -14,7 +14,7 @@ export default function TestimoniCard({ item }) {
     <img
       src={item.foto_url}
       alt={item.nama}
-      className="max-w-full max-h-full object-contain"
+      className="max-w-full rounded-2xl border-slate-600 max-h-full object-contain"
       loading="lazy"
     />
   ) : (
@@ -34,11 +34,11 @@ export default function TestimoniCard({ item }) {
           ))}
         </div>
 
-        <p className="text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1">
+        <p className="text-cyan-400 text-xs font-semibold uppercase tracking-wider mb-1">
           {item.mobil}
         </p>
 
-        <p className="text-gray-300 text-sm leading-relaxed italic line-clamp-3">
+        <p className="text-white text-sm leading-relaxed italic line-clamp-3">
           "{item.pesan}"
         </p>
 
@@ -49,10 +49,10 @@ export default function TestimoniCard({ item }) {
 
           <div>
             <p className="text-white font-semibold text-sm">{item.nama}</p>
-            <p className="text-gray-500 text-xs">{item.kota}</p>
+            <p className="text-gray-300 text-xs">{item.kota}</p>
               {item.tanggal && (
     <p className="text-cyan-400 text-xs mt-0.5">
-      📅 {new Date(item.tanggal).toLocaleDateString("id-ID", { day: "numeric", month: "long", year: "numeric" })}
+      {new Date(item.tanggal).toLocaleDateString("id-ID", { day: "numeric", month: "long", year: "numeric" })}
     </p>
   )}
           </div>
