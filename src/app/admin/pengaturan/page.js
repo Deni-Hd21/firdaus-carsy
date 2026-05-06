@@ -17,7 +17,7 @@ export default function Pengaturan() {
     password: "",
     konfirmasi: "",
   });
-
+{/*}
   async function handleGantiEmail() {
     setLoadingEmail(true);
     setErrorEmail("");
@@ -40,7 +40,7 @@ export default function Pengaturan() {
       setEmailForm({ email: "" });
     }
     setLoadingEmail(false);
-  }
+  }*/}
 
   async function handleGantiPassword() {
     setLoadingPassword(true);
@@ -91,7 +91,7 @@ export default function Pengaturan() {
           </button>
         </div>
 
-        {/* Ganti Email */}
+        {/* Ganti Email 
         <div className="bg-slate-800 rounded-2xl p-6 border border-slate-700 mb-6">
           <h2 className="text-white font-bold text-lg mb-4">Ganti Email</h2>
 
@@ -124,7 +124,7 @@ export default function Pengaturan() {
               {loadingEmail ? "Memproses..." : "Simpan Email"}
             </button>
           </div>
-        </div>
+        </div>*/}
 
         {/* Ganti Password */}
         <div className="bg-slate-800 rounded-2xl p-6 border border-slate-700">
