@@ -1,67 +1,86 @@
 "use client";
 
-import { useRef, useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import TestimoniCard from "./TestimoniCard";
 
 export default function TestimoniSlider({ testimoni }) {
-  const containerRef = useRef(null);
-  const [autoScroll, setAutoScroll] = useState(true);
+  const [aktif, setAktif] = useState(0);
+  const [paused, setPaused] = useState(false);
 
-  const scroll = (direction) => {
-    const container = containerRef.current;
-    const scrollAmount = 340; // width + gap
-
-    if (container) {
-      container.scrollBy({
-        left: direction === "next" ? scrollAmount : -scrollAmount,
-        behavior: "smooth",
-      });
-    }
+  const nextSlide = () => {
+    setAktif((prev) => (prev + 1) % testimoni.length);
   };
 
-  // Auto scroll (pelan & manusiawi)
+  const prevSlide = () => {
+    setAktif((prev) => (prev - 1 + testimoni.length) % testimoni.length);
+  };
+
+  // autoplay (mirip hero)
   useEffect(() => {
-    if (!autoScroll) return;
+    if (testimoni.length <= 1 || paused) return;
 
     const interval = setInterval(() => {
-      scroll("next");
-    }, 4000);
+      nextSlide();
+    }, 5000);
 
     return () => clearInterval(interval);
-  }, [autoScroll]);
+  }, [aktif, paused, testimoni.length]);
+
+  if (!testimoni || testimoni.length === 0) return null;
 
   return (
     <div
-      className="relative"
-      onMouseEnter={() => setAutoScroll(false)}
-      onMouseLeave={() => setAutoScroll(true)}
+      className="relative overflow-hidden"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
     >
-      {/* Slider */}
+      {/* TRACK */}
       <div
-        ref={containerRef}
-        className="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide"
+        className="flex transition-transform duration-700 ease-in-out"
+        style={{
+          transform: `translateX(-${aktif * 100}%)`,
+        }}
       >
         {testimoni.map((item, index) => (
-          <div key={index} className="snap-start">
-            <TestimoniCard item={item} />
+          <div key={index} className="w-full shrink-0 flex justify-center">
+            <div className="w-80">
+              <TestimoniCard item={item} />
+            </div>
           </div>
         ))}
       </div>
 
-      {/* Navigation */}
-      <button
-        onClick={() => scroll("prev")}
-        className="absolute left-0 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black text-white p-3 rounded-full"
-      >
-        ‹
-      </button>
+      {/* NAV */}
+      {testimoni.length > 1 && (
+        <>
+          <button
+            onClick={prevSlide}
+            className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black text-white w-9 h-9 rounded-full flex items-center justify-center"
+          >
+            ‹
+          </button>
 
-      <button
-        onClick={() => scroll("next")}
-        className="absolute right-0 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black text-white p-3 rounded-full"
-      >
-        ›
-      </button>
+          <button
+            onClick={nextSlide}
+            className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black text-white w-9 h-9 rounded-full flex items-center justify-center"
+          >
+            ›
+          </button>
+        </>
+      )}
+
+      {/* DOT */}
+      <div className="flex justify-center mt-6 gap-2">
+        {testimoni.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setAktif(i)}
+            className={`w-2 h-2 rounded-full transition ${
+              i === aktif ? "bg-cyan-400" : "bg-gray-500"
+            }`}
+          />
+        ))}
+      </div>
     </div>
   );
 }

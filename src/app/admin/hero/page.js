@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { compressImage } from "@/lib/compressImage";
 
+
+
 export default function AdminHero() {
   const router = useRouter();
   const [fotos, setFotos] = useState([]);
@@ -42,6 +44,15 @@ async function handleHapus(id) {
 
   return (
     <main className="min-h-screen bg-slate-900 p-8">
+            {/* Background FIXED */}
+      <div className="fixed inset-0 -z-10">
+        <img
+          src="/bg-hero-v2.0.webp"
+          alt="background"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/75"></div>
+      </div>
       <div className="max-w-3xl mx-auto">
         <div className="flex justify-between items-center mb-8">
           <h1 className="text-2xl font-bold text-white">Kelola Foto Hero</h1>
