@@ -5,6 +5,6 @@ export default function robots() {
       allow: "/",
       disallow: "/admin/",
     },
-    sitemap: "https://firdauscars.id/sitemap.xml",
+    sitemap: "https://firdauscarsy.id/sitemap.xml",
   };
 }

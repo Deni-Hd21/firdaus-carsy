@@ -1,13 +1,13 @@
 export default function sitemap() {
   return [
     {
-      url: "https://firdauscars.com",
+      url: "https://firdauscarsy.id",
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 1,
     },
     {
-      url: "https://firdauscars.com/admin/login",
+      url: "https://firdauscarsy.id/admin/login",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.1,
