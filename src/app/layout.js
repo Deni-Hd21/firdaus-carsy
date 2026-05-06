@@ -39,7 +39,7 @@ export const metadata = {
   openGraph: {
     title: "Firdaus Carsy - Kredit Mobil Syari'ah Karawang",
     description:
-      "Jual beli mobil bekas berkualitas dengan sistem kredit syari'ah tanpa riba di Karawang.",
+      "Tempat kredit mobil tanpa riba dengan cicilan tetap dan akad jelas. Melayani berbagai wilayah di Pulau Jawa, Sumatra, Sulawesi dan Kalimantan. Konsultasi sekarang! hubungi 6281294412914",
     url: "https://firdauscarsy.id",
     siteName: "Firdaus Carsy",
     locale: "id_ID",
@@ -58,7 +58,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Firdaus Carsy - Kredit Mobil Syari'ah Karawang",
     description:
-      "Jual beli mobil bekas berkualitas dengan sistem kredit syari'ah tanpa riba di Karawang.",
+      "Tempat kredit mobil tanpa riba dengan cicilan tetap dan akad jelas. Melayani berbagai wilayah di Pulau Jawa, Sumatra, Sulawesi dan Kalimantan. Konsultasi sekarang! hubungi 6281294412914.",
     images: ["/logonav-v2.webp"],
   },
 
