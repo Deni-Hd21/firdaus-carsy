@@ -55,6 +55,11 @@ const faqData = [
       "DP (Down Payment) mulai dari 15% berarti pelanggan hanya perlu membayar 15% dari harga mobil yang akan dibeli sebagai uang muka."
 },
 {
+    pertanyaan: "Bagaimana apabila konsumen tidak bisa melanjutkan proses kredit?",
+    jawaban:
+      "sesuai dengan prinsip syari'ah kami tidak menyita unit, yang kami lakukan yaitu musyawarah bersama konsumen untuk menjual unit bersama dan hasil dari penjualan tersebut dibagi hasil sesuai dengan perhitungan yang adil."
+},
+{
     pertanyaan: "Ada di kota mana saja Firdaus Carsy?",
     jawaban:
       "Firdaus Carsy melayani pelanggan dari Karawang, Palembang, Bandung, Sunter, Jakarta Selatan, Makassar, Bekasi, Surabaya, Malang, Medan, Balikpapan, Bogor, Kendari, Pontianak, Batam, Pekanbaru, Bsd, Jakarta Utara, Samarinda, Sidoarjo, Tangerang."

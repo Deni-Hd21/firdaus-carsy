@@ -8,11 +8,11 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://firdaus-carsy.id"),
+  metadataBase: new URL("https://firdauscarsy.id"),
 
   title: "Firdaus Carsy - Jual Beli Mobil Bekas | Kredit Syari'ah Karawang",
   description:
-    "Jual beli mobil bekas berkualitas dengan sistem kredit syari'ah tanpa riba. Melayani Karawang, Cikampek, Purwakarta, Bandung, dan Jabodetabek. Hubungi 0821-2517-1716.",
+    "Ingin kredit mobil tanpa riba dengan cicilan tetap dan akad jelas? Firdaus Carsy hadir dengan proses cepat, aman, dan terpercaya. Melayani berbagai wilayah di Pulau Jawa, Sumatra, Sulawesi dan Kalimantan. Konsultasi sekarang! hubungi 6281294412914.",
 
   keywords: [
     "jual mobil bekas",
@@ -40,13 +40,13 @@ export const metadata = {
     title: "Firdaus Carsy - Kredit Mobil Syari'ah Karawang",
     description:
       "Jual beli mobil bekas berkualitas dengan sistem kredit syari'ah tanpa riba di Karawang.",
-    url: "https://firdaus-carsy.id",
+    url: "https://firdauscarsy.id",
     siteName: "Firdaus Carsy",
     locale: "id_ID",
     type: "website",
     images: [
       {
-        url: "/logonav.webp",
+        url: "/logonav-v2.webp",
         width: 800,
         height: 600,
         alt: "Firdaus Carsy Syariah",
@@ -59,7 +59,7 @@ export const metadata = {
     title: "Firdaus Carsy - Kredit Mobil Syari'ah Karawang",
     description:
       "Jual beli mobil bekas berkualitas dengan sistem kredit syari'ah tanpa riba di Karawang.",
-    images: ["/logonav.webp"],
+    images: ["/logonav-v2.webp"],
   },
 
   robots: {
@@ -81,8 +81,8 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "AutoDealer",
               name: "Firdaus Carsy",
-              url: "https://firdaus-carsy.id",
-              telephone: "082125171716",
+              url: "https://firdauscarsy.id",
+              telephone: "6281294412914",
               areaServed: "Karawang",
               address: {
                 "@type": "PostalAddress",
@@ -109,24 +109,24 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "Firdaus Cars - Jual Beli Mobil Bekas | Kredit Syari'ah Karawang",
+  title: "Firdaus Carsy - Jual Beli Mobil Bekas | Kredit Syari'ah Karawang",
   description: "Jual beli mobil bekas berkualitas dengan sistem kredit syari'ah tanpa riba. Melayani Karawang, Cikampek, Purwakarta, Bandung, dan Jabodetabek. Hubungi 0821-2517-1716.",
-  keywords: "jual mobil bekas karawang, kredit mobil syariah, mobil bekas karawang, cicilan syariah tanpa riba, firdaus cars",
-  authors: [{ name: "Firdaus Cars" }],
+  keywords: "jual mobil bekas karawang, kredit mobil syariah, mobil bekas karawang, cicilan syariah tanpa riba, firdaus carsy",
+  authors: [{ name: "Firdaus Carsy" }],
   openGraph: {
-    title: "Firdaus Cars - Kredit Mobil Syari'ah Karawang",
+    title: "Firdaus Carsy - Kredit Mobil Syari'ah Karawang",
     description: "Jual beli mobil bekas berkualitas dengan sistem kredit syari'ah tanpa riba di Karawang.",
-    url: "https://firdauscars.com",
-    siteName: "Firdaus Cars",
+    url: "https://firdauscarsy.com",
+    siteName: "Firdaus Carsy",
     locale: "id_ID",
     type: "website",
-    images: [{ url: "/logonav.webp", width: 800, height: 600, alt: "Firdaus Cars Syariah" }],
+    images: [{ url: "/logonav-v2.webp", width: 800, height: 600, alt: "Firdaus Carsy Syariah" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Firdaus Cars - Kredit Mobil Syari'ah Karawang",
+    title: "Firdaus Carsy - Kredit Mobil Syari'ah Karawang",
     description: "Jual beli mobil bekas berkualitas dengan sistem kredit syari'ah tanpa riba di Karawang.",
-    images: ["/logonav.webp"],
+    images: ["/logonav-v2.webp"],
   },
   robots: { index: true, follow: true },
 };
