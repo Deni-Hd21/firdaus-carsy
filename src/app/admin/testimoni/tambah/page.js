@@ -15,6 +15,7 @@ export default function TambahTestimoni() {
     mobil: "",
     pesan: "",
     bintang: 5,
+    tanggal: "",
   });
 
   function handleChange(e) {
@@ -145,6 +146,16 @@ await fetch("/api/revalidate", { method: "POST" });
             <label className={labelClass}>Pesan / Ulasan</label>
             <textarea name="pesan" value={form.pesan} onChange={handleChange} className={inputClass} rows={3} />
           </div>
+          <div>
+  <label className={labelClass}>Tanggal Akad</label>
+  <input
+    type="date"
+    name="tanggal"
+    value={form.tanggal}
+    onChange={handleChange}
+    className={inputClass}
+  />
+</div>
 
           <div>
             <label className={labelClass}>Foto Serah Terima</label>

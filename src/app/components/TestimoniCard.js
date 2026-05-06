@@ -3,30 +3,31 @@
 export default function TestimoniCard({ item }) {
   return (
     <div className="w-80 shrink-0 bg-slate-800/90 backdrop-blur-sm rounded-2xl overflow-hidden border border-slate-700 hover:border-cyan-400 transition">
-      
+<div className="mb-1 mt-1 flex justify-center">
+  <div className=" text-cyan-400 text-[14px] font-bold px-3 py-1 rounded-full tracking-wide">
+    AKAD SERAH TERIMA
+  </div>
+</div>
       {/* Foto */}
-      <div className="relative w-full aspect-square bg-slate-700">
-        {item.foto_url ? (
-          <img
-            src={item.foto_url}
-            alt={item.nama}
-            className="w-full h-full object-cover"
-            loading="lazy"
-          />
-        ) : (
-          <div className="w-full h-full flex flex-col items-center justify-center gap-2">
-            <span className="text-4xl">🤝</span>
-            <p className="text-slate-400 text-xs">Foto Serah Terima</p>
-          </div>
-        )}
-
-        <div className="absolute top-3 left-3 bg-cyan-400 text-white text-xs font-bold px-3 py-1 rounded-full">
-          AKAD SERAH TERIMA
-        </div>
-      </div>
+<div className="relative mr-3 ml-3 border border-slate-600 rounded-2xl aspect-video bg-slate-700 flex items-center justify-center">
+  {item.foto_url ? (
+    <img
+      src={item.foto_url}
+      alt={item.nama}
+      className="max-w-full max-h-full object-contain"
+      loading="lazy"
+    />
+  ) : (
+    <div className="w-full h-full flex flex-col items-center justify-center gap-2">
+      <span className="text-4xl">🤝</span>
+      <p className="text-slate-400 text-xs">Foto Serah Terima</p>
+    </div>
+  )}
+</div>
 
       {/* Info */}
       <div className="p-5">
+
         <div className="flex gap-1 mb-3">
           {[...Array(item.bintang)].map((_, i) => (
             <span key={i} className="text-yellow-500">★</span>
@@ -49,6 +50,11 @@ export default function TestimoniCard({ item }) {
           <div>
             <p className="text-white font-semibold text-sm">{item.nama}</p>
             <p className="text-gray-500 text-xs">{item.kota}</p>
+              {item.tanggal && (
+    <p className="text-cyan-400 text-xs mt-0.5">
+      📅 {new Date(item.tanggal).toLocaleDateString("id-ID", { day: "numeric", month: "long", year: "numeric" })}
+    </p>
+  )}
           </div>
         </div>
       </div>
