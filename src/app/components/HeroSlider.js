@@ -21,7 +21,7 @@ export default function HeroSlider({ fotos }) {
   }
 
   return (
-<div className="mb-5 relative w-full max-w-[420px] aspect-[2/3] mx-auto rounded-2xl overflow-hidden border border-slate-700 shadow-lg bg-slate-800">      {fotos.map((foto, i) => (
+<div className="mb-5 relative w-full max-w-[380px] aspect-[2/3] mx-auto rounded-2xl overflow-hidden border border-slate-700 shadow-lg bg-slate-800">      {fotos.map((foto, i) => (
         <img
           key={foto.id}
           src={foto.url}
