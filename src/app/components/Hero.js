@@ -60,7 +60,7 @@ Di Firdaus Carsy, kami bantu Anda memiliki mobil impian dengan sistem kredit sya
             <a href="https://www.instagram.com/firdauscarsy" target="_blank" className="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-8 py-3 rounded-full transition text-center">
   Lihat Katalog di Instagram
 </a>
-            <a href="https://wa.me/6281294412914?text=Halo Pak Aldi, saya ingin konsultasi kredit syariah" target="_blank" className="bg-red-600 text-white-400 hover:bg-red-400 hover:text-white font-semibold px-8 py-3 rounded-full transition text-center">
+            <a href="https://wa.me/6281294412914?text=Halo Pak Aldi, saya ingin konsultasi mengenai kredit mobil syariah" target="_blank" className="bg-red-600 text-white-400 hover:bg-red-400 hover:text-white font-semibold px-8 py-3 rounded-full transition text-center">
               Konsultasi Gratis
             </a>
           </div>

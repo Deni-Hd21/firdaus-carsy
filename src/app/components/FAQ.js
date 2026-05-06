@@ -171,7 +171,7 @@ export default function FAQ() {
         >
           Masih ada pertanyaan lain?{" "}
                       <a
-              href="https://wa.me/6281294412914?text=Halo Pak Aldi, saya ingin konsultasi mengenai pembelian mobil"
+              href="https://wa.me/6281294412914?text=Halo Pak Aldi, saya ingin konsultasi mengenai kredit mobil syariah"
               target="_blank"
               className="mt-2 block text-center bg-green-500 hover:bg-green-400 text-white font-semibold px-8 py-4 rounded-full transition text-lg"
             >
