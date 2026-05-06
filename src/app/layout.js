@@ -17,7 +17,7 @@ export const metadata = {
   keywords: [
     "jual mobil bekas",
     "kredit mobil syariah",
-    "mobil bekas",
+    "kredit mobil syariah karawang",
     "cicilan syariah tanpa bunga",
     "kredit syariah tanpa riba",
     "mobil bekas dp kecil",
