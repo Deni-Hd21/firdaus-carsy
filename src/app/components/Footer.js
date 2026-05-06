@@ -16,7 +16,7 @@ export default function Footer() {
           </div>
         </div>Aldi Akhmad Firdaus 
         <p className="text-slate-400 text-sm text-center w-full border-t border-slate-100 pt-4">
-          Powered by : Deni x Yuli
+          Powered by : #
         </p>
         <p className="text-slate-400 text-sm text-center w-full border-t border-slate-100 pt-4">
           © 2026 Firdaus Carsy. All rights reserved.
