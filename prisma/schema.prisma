@@ -59,3 +59,12 @@ model FotoTentang {
   aktif     Boolean  @default(true)
   createdAt DateTime @default(now())
 }
+
+model FAQ {
+  id        Int      @id @default(autoincrement())
+  pertanyaan String
+  jawaban   String
+  urutan    Int      @default(0)
+  aktif     Boolean  @default(true)
+  createdAt DateTime @default(now())
+}

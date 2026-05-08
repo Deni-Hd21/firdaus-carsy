@@ -112,16 +112,25 @@ export default function AdminTestimoni() {
         ) : (
           <div className="flex flex-col gap-4">
             {testimoni.map((item) => (
-              <div key={item.id} className="bg-slate-800 p-5 rounded-xl flex justify-between items-center">
-                <h3 className="text-white">{item.nama}</h3>
-
-                <button
-                  onClick={() => handleHapus(item.id)}
-                  disabled={deletingId === item.id}
-                  className="text-red-400 hover:text-red-500 text-sm disabled:opacity-50"
-                >
-                  {deletingId === item.id ? "Menghapus..." : "Hapus"}
-                </button>
+              <div key={item.id} className="bg-slate-800 p-5 rounded-xl flex justify-between items-center gap-4">
+                <div>
+                  <h3 className="text-white font-semibold">{item.nama}</h3>
+                  <p className="text-cyan-400 text-sm">{item.mobil}</p>
+                  <p className="text-gray-500 text-xs mt-1">{item.kota} · {"★".repeat(item.bintang)}</p>
+                </div>
+                <div className="flex gap-2 shrink-0">
+                  <button
+                    onClick={() => router.push(`/admin/testimoni/${item.id}`)}
+                    className="border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-white text-sm px-4 py-2 rounded-xl transition">
+                    Edit
+                  </button>
+                  <button
+                    onClick={() => handleHapus(item.id)}
+                    disabled={deletingId === item.id}
+                    className="border border-red-500 text-red-400 hover:bg-red-500 hover:text-white text-sm px-4 py-2 rounded-xl transition disabled:opacity-50">
+                    {deletingId === item.id ? "..." : "Hapus"}
+                  </button>
+                </div>
               </div>
             ))}
           </div>
