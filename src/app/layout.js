@@ -10,7 +10,7 @@ const montserrat = Montserrat({
 export const metadata = {
   metadataBase: new URL("https://firdauscarsy.id"),
 
-  title: "Firdaus Carsy - Jual Beli Mobil Bekas | Kredit Syari'ah Karawang",
+  title: "Firdaus Carsy - Solusi Kredit Mobil Syariah | Kredit Tanpa Bunga, Tanpa Riba, Proses Cepat Aman dan Terpercaya",
   description:
     "Ingin kredit mobil tanpa riba dengan cicilan tetap dan akad jelas? Firdaus Carsy hadir dengan proses cepat, aman, dan terpercaya. Melayani berbagai wilayah di Pulau Jawa, Sumatra, Sulawesi dan Kalimantan. Konsultasi sekarang! hubungi 6281294412914.",
 
@@ -37,7 +37,7 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "Firdaus Carsy - Kredit Mobil Syari'ah Karawang",
+    title: "Firdaus Carsy - Solusi Kredit Mobil Syariah | Kredit Tanpa Bunga, Tanpa Riba, Proses Cepat Aman dan Terpercaya",
     description:
       "Tempat kredit mobil tanpa riba dengan cicilan tetap dan akad jelas. Melayani berbagai wilayah di Pulau Jawa, Sumatra, Sulawesi dan Kalimantan. Konsultasi sekarang! hubungi 6281294412914",
     url: "https://firdauscarsy.id",
@@ -109,7 +109,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "Firdaus Carsy - Jual Beli Mobil Bekas | Kredit Syari'ah Karawang",
+  title: "Firdaus Carsy - Solusi Kredit Mobil Syariah | Kredit Tanpa Bunga, Tanpa Riba, Proses Cepat Aman dan Terpercaya",
   description: "Jual beli mobil bekas berkualitas dengan sistem kredit syari'ah tanpa riba. Melayani Karawang, Cikampek, Purwakarta, Bandung, dan Jabodetabek. Hubungi 0821-2517-1716.",
   keywords: "jual mobil bekas karawang, kredit mobil syariah, mobil bekas karawang, cicilan syariah tanpa riba, firdaus carsy",
   authors: [{ name: "Firdaus Carsy" }],
