@@ -40,7 +40,7 @@ export default async function Testimoni() {
             Ingin menjadi pelanggan puas kami berikutnya?
           </p>
           <a
-            href="https://wa.me/6282125171716?text=Halo Pak Aldi, saya ingin konsultasi mengenai kredit mobil syariah"
+            href="https://wa.me/6281294412914/?text=Halo Pak Aldi, saya ingin konsultasi mengenai kredit mobil syariah"
             target="_blank"
             className="inline-block bg-red-600 hover:bg-red-400 text-white font-semibold px-8 py-3 rounded-full transition"
           >
