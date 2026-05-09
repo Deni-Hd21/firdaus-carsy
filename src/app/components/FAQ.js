@@ -16,7 +16,7 @@ export default async function FAQ() {
         <div className="text-center mb-12">
           <span className="text-cyan-400 text-sm font-semibold uppercase tracking-widest">FAQ</span>
           <h2 className="text-3xl md:text-4xl font-bold text-white mt-2">Pertanyaan yang Sering Ditanyakan</h2>
-          <p className="mt-4 max-w-xl mx-auto text-slate-400">Temukan jawaban atas pertanyaan umum seputar kredit syari'ah dan layanan Firdaus Carsy.</p>
+          <p className="mt-4 max-w-xl text-base md:text-lg mx-auto text-white">Temukan jawaban atas pertanyaan umum seputar kredit syari'ah dan layanan Firdaus Carsy.</p>
         </div>
 
         {faqs.length > 0 ? (

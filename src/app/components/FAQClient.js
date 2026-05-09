@@ -11,7 +11,7 @@ function FAQItem({ item, index, isOpen, onToggle }) {
       viewport={{ once: true }}
       className="border border-slate-700 rounded-2xl overflow-hidden bg-slate-800/50 backdrop-blur-sm">
       <button onClick={onToggle} className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left group">
-        <span className="text-white font-semibold text-base md:text-lg group-hover:text-cyan-400 transition-colors duration-300">
+        <span className="text-white font-semibold text-base md:text-xl group-hover:text-cyan-400 transition-colors duration-300">
           {item.pertanyaan}
         </span>
         <motion.span
@@ -32,7 +32,7 @@ function FAQItem({ item, index, isOpen, onToggle }) {
             className="overflow-hidden">
             <div className="px-6 pb-5">
               <div className="h-px bg-slate-700 mb-4" />
-              <p className="text-slate-300 leading-relaxed text-base whitespace-pre-line">{item.jawaban}</p>
+              <p className="text-white leading-relaxed text-base md:text-lg whitespace-pre-line">{item.jawaban}</p>
             </div>
           </motion.div>
         )}

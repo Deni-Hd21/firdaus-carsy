@@ -22,7 +22,7 @@ export default async function Testimoni() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mt-2">
             Akad Serah Terima
           </h2>
-          <p className="text-gray-300 mt-4 max-w-xl mx-auto">
+          <p className="text-gray-300 text-base md:text-lg  mt-4 max-w-xl mx-auto">
             Ratusan pelanggan telah mempercayakan pembelian mobil mereka kepada kami.
           </p>
         </div>
@@ -36,7 +36,7 @@ export default async function Testimoni() {
         )}
 
         <div className="text-center mt-12">
-          <p className="text-gray-300 mb-4">
+          <p className="text-gray-300 text-base md:text-lg  mb-4">
             Ingin menjadi pelanggan puas kami berikutnya?
           </p>
           <a

@@ -55,26 +55,12 @@ export default function Dashboard() {
           </div>
 
           {/* Menu */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <button
-                onClick={() => router.push("/admin/hero")}
-                className="bg-slate-800 hover:border-cyan-400 border border-slate-700 rounded-2xl p-6 text-left transition">
-                <p className="mb-3">
-                  <img
-                    src="/icon/icon-images.svg"
-                    alt="Icon Hero"
-                    className="w-10 h-10"
-                  />
-                </p>
-
-                <h2 className="text-white font-bold text-lg">
-                  Kelola Foto Hero
-                </h2>
-
-                <p className="text-gray-400 text-sm mt-1">
-                  Upload dan kelola foto slideshow halaman utama
-                </p>
-              </button>
+<         div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <button onClick={() => router.push("/admin/hero")} className="bg-slate-800 hover:border-cyan-400 border border-slate-700 rounded-2xl p-6 text-left transition">
+              <p className="text-4xl mb-3">🖼️</p>
+              <h2 className="text-white font-bold text-lg">Kelola Foto Hero</h2>
+              <p className="text-gray-400 text-sm mt-1">Upload dan kelola foto slideshow halaman utama</p>
+            </button>
 
             <button onClick={() => router.push("/admin/testimoni")} className="bg-slate-800 hover:border-cyan-400 border border-slate-700 rounded-2xl p-6 text-left transition">
               <p className="text-4xl mb-3">⭐</p>
