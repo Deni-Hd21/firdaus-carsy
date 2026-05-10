@@ -36,7 +36,7 @@ export default function AdminLogin() {
       <div className="bg-slate-800 rounded-2xl p-8 w-full max-w-md border border-slate-700">
         <div className="text-center mb-8">
           <h1 className="text-2xl font-bold text-white">Admin Panel</h1>
-          <p className="text-gray-400 text-sm mt-1">Firdaus Cars Syari'ah</p>
+          <p className="text-gray-400 text-sm mt-1">Firdaus Carsy</p>
         </div>
 
         {error && (
