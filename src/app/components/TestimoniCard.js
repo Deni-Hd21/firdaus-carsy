@@ -9,7 +9,7 @@ export default function TestimoniCard({ item }) {
   </div>
 </div>
       {/* Foto */}
-<div className="relative mr-3 ml-3 border border-slate-600 rounded-2xl aspect-video bg-slate-700 flex overflow-hidden">
+<div className="relative mr-3 ml-3 border border-slate-600 rounded-2xl aspect-video bg-slate-700 flex items-center justify-center">
   {item.foto_url ? (
     <img
       src={item.foto_url}
