@@ -14,7 +14,7 @@ export default function TestimoniCard({ item }) {
     <img
       src={item.foto_url}
       alt={item.nama}
-      className="max-w-full rounded-2xl border-slate-600 max-h-full object-contain"
+      className="w-full h-full object-cover object-center rounded-2xl"
       loading="lazy"
     />
   ) : (
