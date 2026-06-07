@@ -22,6 +22,7 @@ export default function Navbar() {
           <li><a href="#testimoni" className="hover:text-cyan-500 transition">Testimoni</a></li>
           <li><a href="#faq" className="hover:text-cyan-500 transition">FAQ</a></li>
           <li><a href="#kontak" className="hover:text-cyan-500 transition">Kontak</a></li>
+          <li><a href="/artikel" className="hover:text-cyan-500 transition">Artikel</a></li>
         </ul>
         <a href="https://wa.me/6281294412914" target="_blank" className="hidden md:block bg-cyan-500 hover:bg-cyan-600 text-white text-sm font-semibold px-5 py-2 rounded-full transition">
           Hubungi Kami

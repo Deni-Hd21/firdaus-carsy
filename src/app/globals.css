@@ -1,1 +1,145 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+.ProseMirror h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1rem 0;
+  color: white;
+}
+
+.ProseMirror h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0.75rem 0;
+  color: white;
+}
+
+.ProseMirror h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  color: white;
+}
+
+.ProseMirror ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+  color: white;
+}
+
+.ProseMirror ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+  color: white;
+}
+
+.ProseMirror blockquote {
+  border-left: 4px solid #06b6d4;
+  padding-left: 1rem;
+  margin: 0.5rem 0;
+  color: #94a3b8;
+  font-style: italic;
+}
+
+.ProseMirror hr {
+  border-color: #475569;
+  margin: 1rem 0;
+}
+
+.ProseMirror p {
+  margin: 0.5rem 0;
+  color: white;
+}
+
+.ProseMirror p.is-editor-empty:first-child::before {
+  color: #64748b;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+
+/* --- CSS untuk konten artikel --- */
+
+.artikel-konten h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 1.5rem 0 1rem;
+}
+
+.artikel-konten h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 1.25rem 0 0.75rem;
+}
+
+.artikel-konten h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 1rem 0 0.5rem;
+}
+
+.artikel-konten p {
+  color: #374151;
+  line-height: 1.8;
+  margin: 0.75rem 0;
+  font-size: 1.1rem;
+}
+
+.artikel-konten ul {
+  list-style-type: disc;
+  padding-left: 1.75rem;
+  margin: 0.75rem 0;
+  color: #374151;
+}
+
+.artikel-konten ol {
+  list-style-type: decimal;
+  padding-left: 1.75rem;
+  margin: 0.75rem 0;
+  color: #374151;
+}
+
+.artikel-konten li {
+  color: #374151;
+  line-height: 1.8;
+  margin: 0.25rem 0;
+  font-size: 1.1rem;
+}
+
+.artikel-konten strong {
+  font-weight: 700;
+  color: #111827;
+}
+
+.artikel-konten em {
+  font-style: italic;
+  color: #374151;
+}
+
+.artikel-konten blockquote {
+  border-left: 4px solid #06b6d4;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  color: #6b7280;
+  font-style: italic;
+}
+
+.artikel-konten a {
+  color: #0891b2;
+  text-decoration: underline;
+}
+
+.artikel-konten hr {
+  border-color: #e5e7eb;
+  margin: 1.5rem 0;
+}
+
+/* --- akhir CSS untuk konten artikel --- */

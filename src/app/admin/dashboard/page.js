@@ -73,6 +73,12 @@ export default function Dashboard() {
               <h2 className="text-white font-bold text-lg">Kelola FAQ</h2>
               <p className="text-gray-400 text-sm mt-1">Tambah, edit, dan hapus pertanyaan yang sering ditanyakan</p>
             </button>
+
+            <button onClick={() => router.push("/admin/artikel")} className="bg-slate-800 hover:border-cyan-400 border border-slate-700 rounded-2xl p-6 text-left transition">
+              <p className="text-4xl mb-3">✍️</p>
+              <h2 className="text-white font-bold text-lg">Kelola Artikel</h2>
+              <p className="text-gray-400 text-sm mt-1">Tulis dan kelola artikel untuk meningkatkan SEO</p>
+            </button>
           </div>
         </div>
       </section>

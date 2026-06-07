@@ -68,3 +68,16 @@ model FAQ {
   aktif     Boolean  @default(true)
   createdAt DateTime @default(now())
 }
+
+model Artikel {
+  id          Int      @id @default(autoincrement())
+  judul       String
+  slug        String   @unique
+  excerpt     String?
+  konten      String
+  cover_url   String?
+  meta_desc   String?
+  status      String   @default("draft")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
