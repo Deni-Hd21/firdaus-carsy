@@ -120,9 +120,9 @@ export default async function DetailArtikel({ params }) {
                     {rekomendasi.map((item) => (
                       <Link key={item.slug} href={`/artikel/${item.slug}`} className="flex gap-3 group">
                         {item.cover_url ? (
-                          <img src={item.cover_url} alt={item.judul} className="w-20 h-20 object-cover rounded-xl shrink-0" />
+                          <img src={item.cover_url} alt={item.judul} className="w-32 aspect-video object-cover rounded-xl shrink-0" />
                         ) : (
-                          <div className="w-20 h-20 bg-cyan-50 rounded-xl shrink-0 flex items-center justify-center text-2xl">📝</div>
+                          <div className="w-32 aspect-video bg-cyan-50 rounded-xl shrink-0 flex items-center justify-center text-2xl">📝</div>
                         )}
                         <div>
                           <p className="text-gray-900 font-semibold text-sm group-hover:text-cyan-600 transition line-clamp-2">{item.judul}</p>
