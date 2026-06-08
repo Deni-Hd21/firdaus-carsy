@@ -46,7 +46,7 @@ export default function AdminArtikel() {
         ) : (
           <div className="flex flex-col gap-4">
             {artikels.map((item) => (
-              <div key={item.id} className="bg-slate-800 rounded-2xl p-5 border border-slate-700 flex justify-between items-center gap-4">
+              <div key={item.id} className="bg-slate-800 rounded-2xl p-5 border border-slate-700 flex flex-col gap-4">
                 <div className="flex items-center gap-4">
                   {item.cover_url && (
                     <img src={item.cover_url} className="w-16 h-16 object-cover rounded-xl shrink-0" />
@@ -63,14 +63,14 @@ export default function AdminArtikel() {
                     </p>
                   </div>
                 </div>
-                <div className="flex gap-2 shrink-0">
-                  <button onClick={() => window.open(`/artikel/${item.slug}`, "_blank")} className="border border-slate-600 text-gray-400 hover:text-white text-sm px-3 py-2 rounded-xl transition">
+                <div className="flex gap-2 w-full">
+                  <button onClick={() => window.open(`/artikel/${item.slug}`, "_blank")} className="flex-1 border border-slate-600 text-gray-400 hover:text-white text-sm px-3 py-2 rounded-xl transition text-center">
                     👁 Preview
                   </button>
-                  <button onClick={() => router.push(`/admin/artikel/${item.id}`)} className="border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-white text-sm px-4 py-2 rounded-xl transition">
+                  <button onClick={() => router.push(`/admin/artikel/${item.id}`)} className="flex-1 border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-white text-sm px-4 py-2 rounded-xl transition">
                     Edit
                   </button>
-                  <button onClick={() => handleHapus(item.id)} className="border border-red-500 text-red-400 hover:bg-red-500 hover:text-white text-sm px-4 py-2 rounded-xl transition">
+                  <button onClick={() => handleHapus(item.id)} className="flex-1 border border-red-500 text-red-400 hover:bg-red-500 hover:text-white text-sm px-4 py-2 rounded-xl transition">
                     Hapus
                   </button>
                 </div>
