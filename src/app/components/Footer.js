@@ -57,7 +57,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Firdaus Carsy. All rights reserved.
           </p>
           <p className="text-slate-500 text-sm text-center md:mr-20">
-            Powered by : rangke.id
+            Powered by : rangken.id
           </p>
         </div>
       </div>
