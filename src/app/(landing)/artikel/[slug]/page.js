@@ -53,7 +53,7 @@ export default async function DetailArtikel({ params }) {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen bg-white text-gray-900 pt-24 pb-16">
+      <main className="min-h-screen bg-white pt-24 pb-16">
 
 
 
@@ -87,19 +87,28 @@ export default async function DetailArtikel({ params }) {
                 <p className="mt-6 text-lg text-gray-600 leading-relaxed border-l-4 border-cyan-400 pl-4 italic">{artikel.excerpt}</p>
               )}
 
-              {/* Cover — rasio 16:9 konsisten */}
-              {artikel.cover_url && (
-                <div className="w-full px-0 md:px-0 lg:px-8 xl:px-16">
-                  {/*md:px-8 lg:px-16 xl:px-32*/}
-                  <div className="w-full aspect-video overflow-hidden md:rounded-2xl">
-                    <img src={artikel.cover_url} alt={artikel.judul} className="w-full h-full object-cover object-center" />
+                      {/* Cover — rasio 16:9 konsisten */}
+                {artikel.cover_url && (
+                  <div className="w-full px-0 md:px-0 lg:px-8 xl:px-16">
+                                          {/*md:px-8 lg:px-16 xl:px-32*/}    
+                    <div className="w-full aspect-video overflow-hidden md:rounded-2xl">
+                      <img src={artikel.cover_url} alt={artikel.judul} className="w-full h-full object-cover object-center" />
+                    </div>
                   </div>
-                </div>
-              )}
+                )}
 
               {/* Konten Artikel */}
               <div
-                className="mt-8 max-w-none artikel-konten"
+                className="mt-8 prose prose-lg max-w-none prose-slate
+                  [&_h1]:text-gray-900
+                  [&_h2]:text-gray-900
+                  [&_h3]:text-gray-900
+                  [&_p]:text-gray-700
+                  [&_li]:text-gray-700
+                  [&_strong]:text-gray-900
+                  [&_blockquote]:text-gray-600
+                  [&_blockquote]:border-cyan-400
+                  [&_a]:text-cyan-600"
                 dangerouslySetInnerHTML={{ __html: artikel.konten }}
               />
 
@@ -120,9 +129,9 @@ export default async function DetailArtikel({ params }) {
                     {rekomendasi.map((item) => (
                       <Link key={item.slug} href={`/artikel/${item.slug}`} className="flex gap-3 group">
                         {item.cover_url ? (
-                          <img src={item.cover_url} alt={item.judul} className="w-32 aspect-video object-cover rounded-xl shrink-0" />
+                          <img src={item.cover_url} alt={item.judul} className="w-20 h-20 object-cover rounded-xl shrink-0" />
                         ) : (
-                          <div className="w-32 aspect-video bg-cyan-50 rounded-xl shrink-0 flex items-center justify-center text-2xl">📝</div>
+                          <div className="w-20 h-20 bg-cyan-50 rounded-xl shrink-0 flex items-center justify-center text-2xl">📝</div>
                         )}
                         <div>
                           <p className="text-gray-900 font-semibold text-sm group-hover:text-cyan-600 transition line-clamp-2">{item.judul}</p>
