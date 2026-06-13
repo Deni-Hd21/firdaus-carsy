@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,22 +10,22 @@ export default function Navbar() {
     <nav className="fixed left-0 right-0 z-50 top-0 bg-white shadow-md overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center">
-          <a href="/">
+          <Link href="/">
             <Image
               src="/logo-v2.webp"
               alt="Firdaus Cars"
               width={120}
               height={50}
               priority />
-          </a>
+          </Link>
         </div>
         <ul className="hidden md:flex gap-8 text-slate-800 text-sm font-medium">
           <li><a href="https://www.instagram.com/firdauscarsy" target="_blank" className="hover:text-cyan-500 transition">Katalog</a></li>
-          <li><a href="/#tentang" className="hover:text-cyan-500 transition">Tentang Kami</a></li>
-          <li><a href="/#testimoni" className="hover:text-cyan-500 transition">Testimoni</a></li>
-          <li><a href="/#faq" className="hover:text-cyan-500 transition">FAQ</a></li>
-          <li><a href="/#kontak" className="hover:text-cyan-500 transition">Kontak</a></li>
-          <li><a href="/artikel" className="hover:text-cyan-500 transition">Artikel</a></li>
+          <li><Link href="/#tentang" className="hover:text-cyan-500 transition">Tentang Kami</Link></li>
+          <li><Link href="/#testimoni" className="hover:text-cyan-500 transition">Testimoni</Link></li>
+          <li><Link href="/#faq" className="hover:text-cyan-500 transition">FAQ</Link></li>
+          <li><Link href="/#kontak" className="hover:text-cyan-500 transition">Kontak</Link></li>
+          <li><Link href="/artikel" className="hover:text-cyan-500 transition">Artikel</Link></li>
         </ul>
         <a href="https://wa.me/6281294412914" target="_blank" className="hidden md:block bg-cyan-500 hover:bg-cyan-600 text-white text-sm font-semibold px-5 py-2 rounded-full transition">
           Hubungi Kami
@@ -44,11 +45,11 @@ export default function Navbar() {
       <div className={`md:hidden bg-white px-4 pb-0 border-t border-slate-100 transition-all duration-500 ease-in-out overflow-hidden ${menuOpen ? "pb-6 max-h-96 opacity-100" : "max-h-0 opacity-0"}`}>
         <ul className="flex flex-col gap-4 text-slate-800 text-sm font-medium pt-4">
           <li><a href="https://www.instagram.com/firdauscarsy" target="_blank" onClick={() => setMenuOpen(false)} className="hover:text-cyan-500 transition">Katalog</a></li>
-          <li><a href="/#tentang" onClick={() => setMenuOpen(false)} className="hover:text-cyan-500 transition">Tentang Kami</a></li>
-          <li><a href="/#testimoni" onClick={() => setMenuOpen(false)} className="hover:text-cyan-500 transition">Testimoni</a></li>
-          <li><a href="/#faq" onClick={() => setMenuOpen(false)} className="hover:text-cyan-500 transition">FAQ</a></li>
-          <li><a href="/#kontak" onClick={() => setMenuOpen(false)} className="hover:text-cyan-500 transition">Kontak</a></li>
-          <li><a href="/artikel" onClick={() => setMenuOpen(false)} className="hover:text-cyan-500 transition">Artikel</a></li>
+          <li><Link href="/#tentang" onClick={() => setMenuOpen(false)} className="hover:text-cyan-500 transition">Tentang Kami</Link></li>
+          <li><Link href="/#testimoni" onClick={() => setMenuOpen(false)} className="hover:text-cyan-500 transition">Testimoni</Link></li>
+          <li><Link href="/#faq" onClick={() => setMenuOpen(false)} className="hover:text-cyan-500 transition">FAQ</Link></li>
+          <li><Link href="/#kontak" onClick={() => setMenuOpen(false)} className="hover:text-cyan-500 transition">Kontak</Link></li>
+          <li><Link href="/artikel" onClick={() => setMenuOpen(false)} className="hover:text-cyan-500 transition">Artikel</Link></li>
         </ul>
         <a href="https://wa.me/6281294412914" target="_blank" className="mt-4 block text-center bg-cyan-500 hover:bg-cyan-600 text-white text-sm font-semibold px-5 py-2 rounded-full transition">
           Hubungi Kami

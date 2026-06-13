@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 
 export default function TentangKamiClient({ fotos }) {
@@ -137,7 +138,7 @@ export default function TentangKamiClient({ fotos }) {
           <span className="text-cyan-400 text-sm font-semibold uppercase tracking-widest">Tentang Kami</span>
           <h2 className="text-3xl md:text-4xl font-bold text-white mt-2">
             Kredit Mobil Bekas <br />
-            <span className="text-cyan-400">Syari'ah Karawang</span>
+            <span className="text-cyan-400">Syari&apos;ah Karawang</span>
           </h2>
 
           <p className="mt-6 leading-relaxed text-base md:text-lg">
@@ -211,14 +212,16 @@ export default function TentangKamiClient({ fotos }) {
               viewport={{ once: true }}
               className="group relative bg-slate-800 rounded-2xl p-6 border border-slate-700 hover:border-cyan-400/50 transition-all duration-300 overflow-hidden"
             >
-              <div className={`absolute inset-0 bg-gradient-to-br ${feature.bgColor} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}></div>
+              <div className={`absolute inset-0 bg-linear-to-br ${feature.bgColor} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}></div>
 
               <div className="relative z-10">
                 <div className="flex items-center justify-center mb-4">
-                  <img
+                  <Image
                     src={feature.icon}
                     alt={feature.title}
-                    className="w-20 h-20 drop-shadow-lg"
+                    width={80}
+                    height={80}
+                    className="drop-shadow-lg"
                   />
                 </div>
 
