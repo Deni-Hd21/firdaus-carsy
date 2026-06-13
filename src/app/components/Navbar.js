@@ -9,12 +9,14 @@ export default function Navbar() {
     <nav className="fixed left-0 right-0 z-50 top-0 bg-white shadow-md overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center">
-          <Image
-            src="/logo-v2.webp"
-            alt="Firdaus Cars"
-            width={120}
-            height={50}
-            priority />
+          <a href="/">
+            <Image
+              src="/logo-v2.webp"
+              alt="Firdaus Cars"
+              width={120}
+              height={50}
+              priority />
+          </a>
         </div>
         <ul className="hidden md:flex gap-8 text-slate-800 text-sm font-medium">
           <li><a href="https://www.instagram.com/firdauscarsy" target="_blank" className="hover:text-cyan-500 transition">Katalog</a></li>
