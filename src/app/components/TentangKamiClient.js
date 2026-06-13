@@ -264,7 +264,7 @@ export default function TentangKamiClient({ fotos }) {
             preload="metadata"
             playsInline
           >
-            <source src="https://patwrieglmispxadpuhl.supabase.co/storage/v1/object/public/mobil/vidio-bayaya-riba.mp4" type="video/mp4" />
+            <source src="https://iokvrybrhwsndactcnwo.supabase.co/storage/v1/object/public/mobil/vidio-bayaya-riba.mp4" />
             Browser kamu tidak mendukung video.
           </video>
         </div>
@@ -285,7 +285,7 @@ export default function TentangKamiClient({ fotos }) {
             preload="metadata"
             playsInline
           >
-            <source src="https://patwrieglmispxadpuhl.supabase.co/storage/v1/object/public/mobil/cash-kredit-beda-harga.mp4" type="video/mp4" />
+            <source src="https://iokvrybrhwsndactcnwo.supabase.co/storage/v1/object/public/mobil/cash-kredit-beda-harga.mp4" />
             Browser kamu tidak mendukung video.
           </video>
         </div>
